@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Form</title>
+
+	<link rel="stylesheet" type="text/css" href="/style-guide/css/fluig-style-guide.min.css">
+	<script src="/resources/js/jquery/jquery.js"></script>
+	<script src="/resources/js/jquery/jquery-ui.min.js"></script>
+	<script src="/resources/js/mustache/mustache-min.js"></script>
+	<script src="/style-guide/js/fluig-style-guide.min.js"></script>
+
+	<!-- CUSTOM -->
+	<link href="/style-guide/css/fluig-style-guide-filter.min.css" rel="stylesheet" type="text/css">
+	<link href="/style-guide/css/fluig-style-guide-ratingstars.min.css" rel="stylesheet" type="text/css">
+	<script src="/style-guide/js/fluig-style-guide-filter.min.js"></script>
+	<script src="/style-guide/js/fluig-style-guide-ratingstars.min.js"></script>
+
+	<link href='/webdesk/customresources?cid=1&resourceName=temaFormulario/0.css' type='text/css' rel='stylesheet' />
+
+	<!-- <meta charset="utf-8">
+	</meta>
+	<link href="./custom/fluig-style-guide-flat.min.css" type="text/css" rel="stylesheet" />
+	<script src="https://code.jquery.com/jquery-3.6.0.js"
+		integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+		integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+		integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+		crossorigin="anonymous"></script> -->
+
+	<link href="./custom/custom.css" type="text/css" rel="stylesheet" />
+	<script type="text/javascript" src="./custom/custom.js"></script>
+</head>
+
+<body class="fluig-style-guide">
+
+	<form class="totvs-form grid vertical create-form-components ui-sortable t0" name="createFormComponents"
+		style="padding-left: 10px; padding-right: 10px;">
+		<h1 class="title-form-application">Protocolo GEAD</h1>
+		<div class="paragraph-is-required system-message-information alert alert-info" role="alert">
+			Todos os campos com * são de preenchimento obrigatório.
+		</div>
+
+		<div class="panel panel-info" id="div_00">
+			<!-- trocar o ID -->
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					<a class="collapse-icon up" data-toggle="collapse" data-parent="#div_00" data-target="#contabilizacao"
+						href="#contabilizacao">
+						<span class="flaticon flaticon-message icon-sm"></span>
+						Contabilização
+					</a>
+				</h3>
+			</div>
+			<div id="contabilizacao" class="panel-collapse collapse in">
+				<!-- trocar o ID -->
+				<div class="panel-body">
+					<div class="row form-input">
+						<div class="col-sm-12">
+							<label>Aprovado?</label>
+							<div class="radio-options">
+								<div class="radio">
+									<label><input type="radio" name="rd_contabilizacao_00" value="Sim">Sim</label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="rd_contabilizacao_00" value="Nao">Não</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel-info" id="div_01">
+			<!-- trocar o ID -->
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					<a class="collapse-icon up" data-toggle="collapse" data-parent="#div_01" data-target="#conciliacao"
+						href="#conciliacao">
+						<!-- trocar o href,data-target, data-parent -->
+						<span class="flaticon flaticon-message icon-sm"></span>
+						Conciliação
+					</a>
+				</h3>
+			</div>
+			<div id="conciliacao" class="panel-collapse collapse in">
+				<!-- trocar o ID -->
+				<div class="panel-body">
+					<div class="row form-input">
+						<div class="col-sm-12">
+							<label>Aprovado?</label>
+							<div class="radio-options">
+								<div class="radio">
+									<label><input type="radio" name="rd_conciliacao_01" value="Sim">Sim</label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="rd_conciliacao_01" value="Nao">Não</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel-info" id="div_02">
+			<!-- trocar o ID -->
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					<a class="collapse-icon up" data-toggle="collapse" data-parent="#div_02" data-target="#efetivacao"
+						href="#efetivacao">
+						<!-- trocar o href,data-target, data-parent -->
+						<span class="flaticon flaticon-message icon-sm"></span>
+						Efetivação
+					</a>
+				</h3>
+			</div>
+			<div id="efetivacao" class="panel-collapse collapse in">
+				<!-- trocar o ID -->
+				<div class="panel-body">
+					<div class="row form-input">
+						<div class="col-sm-12">
+							<label>Efetivado?</label>
+							<div class="radio-options">
+								<div class="radio">
+									<label><input type="radio" name="rd_efetivacao_02" value="Sim">Sim</label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="rd_efetivacao_02" value="Nao">Não</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</form>
+</body>
+
+</html>
