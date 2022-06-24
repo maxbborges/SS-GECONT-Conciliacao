@@ -7,7 +7,7 @@
     <processDescription>GECONT - Conciliação Contábil</processDescription>
     <instruction></instruction>
     <active>true</active>
-    <publicProcess>false</publicProcess>
+    <publicProcess>true</publicProcess>
     <volumeId>Default</volumeId>
     <categoryId>GECONT</categoryId>
     <managerEngineAllocationId></managerEngineAllocationId>
@@ -28,7 +28,7 @@
     <processDefinitionVersionPK>
       <companyId>1</companyId>
       <processId>GECONT - Conciliação Contábil</processId>
-      <version>8</version>
+      <version>17</version>
     </processDefinitionVersionPK>
     <versionDescription></versionDescription>
     <formId>8751</formId>
@@ -39,7 +39,7 @@
     <blockedVersion>false</blockedVersion>
     <counterSign>false</counterSign>
     <openInstances>0</openInstances>
-    <bpmnVersion>1</bpmnVersion>
+    <bpmnVersion>2</bpmnVersion>
     <processStates/>
     <favorito>false</favorito>
     <inheritFormSecurity>false</inheritFormSecurity>
@@ -110,7 +110,8 @@
       <deadlineFieldName></deadlineFieldName>
       <joint>false</joint>
       <agreementPercentage>0</agreementPercentage>
-      <engineAllocationId></engineAllocationId>
+      <engineAllocationId>Pool Grupo</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Group&gt;GECONT&lt;/Group&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
       <selectColleague>1</selectColleague>
       <initialState>false</initialState>
       <notifyAuthorityDelay>true</notifyAuthorityDelay>
@@ -161,7 +162,8 @@
       <deadlineFieldName></deadlineFieldName>
       <joint>false</joint>
       <agreementPercentage>0</agreementPercentage>
-      <engineAllocationId></engineAllocationId>
+      <engineAllocationId>Pool Grupo</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Group&gt;GECONT&lt;/Group&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
       <selectColleague>1</selectColleague>
       <initialState>false</initialState>
       <notifyAuthorityDelay>true</notifyAuthorityDelay>
@@ -212,7 +214,8 @@
       <deadlineFieldName></deadlineFieldName>
       <joint>false</joint>
       <agreementPercentage>0</agreementPercentage>
-      <engineAllocationId></engineAllocationId>
+      <engineAllocationId>Pool Grupo</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Group&gt;GEPES&lt;/Group&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
       <selectColleague>1</selectColleague>
       <initialState>false</initialState>
       <notifyAuthorityDelay>true</notifyAuthorityDelay>
@@ -263,7 +266,8 @@
       <deadlineFieldName></deadlineFieldName>
       <joint>false</joint>
       <agreementPercentage>0</agreementPercentage>
-      <engineAllocationId></engineAllocationId>
+      <engineAllocationId>Pool Grupo</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Group&gt;GEFIN&lt;/Group&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
       <selectColleague>1</selectColleague>
       <initialState>false</initialState>
       <notifyAuthorityDelay>true</notifyAuthorityDelay>
@@ -314,7 +318,8 @@
       <deadlineFieldName></deadlineFieldName>
       <joint>false</joint>
       <agreementPercentage>0</agreementPercentage>
-      <engineAllocationId></engineAllocationId>
+      <engineAllocationId>Pool Grupo</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Group&gt;GEAD&lt;/Group&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
       <selectColleague>1</selectColleague>
       <initialState>false</initialState>
       <notifyAuthorityDelay>true</notifyAuthorityDelay>
@@ -365,7 +370,8 @@
       <deadlineFieldName></deadlineFieldName>
       <joint>false</joint>
       <agreementPercentage>0</agreementPercentage>
-      <engineAllocationId></engineAllocationId>
+      <engineAllocationId>Pool Grupo</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Group&gt;GEAD&lt;/Group&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
       <selectColleague>1</selectColleague>
       <initialState>false</initialState>
       <notifyAuthorityDelay>true</notifyAuthorityDelay>
@@ -380,59 +386,8 @@
       <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
       <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
       <automatic>false</automatic>
-      <positionX>800</positionX>
+      <positionX>770</positionX>
       <positionY>185</positionY>
-      <forecastedEffortType>0</forecastedEffortType>
-      <forecastedEffort>0</forecastedEffort>
-      <notifyManagerFollowUp>false</notifyManagerFollowUp>
-      <notifyManagerDelay>false</notifyManagerDelay>
-      <allowanceManagerTime>0</allowanceManagerTime>
-      <frequenceManagerTime>0</frequenceManagerTime>
-      <inhibitTransfer>false</inhibitTransfer>
-      <periodId></periodId>
-      <stateType>0</stateType>
-      <bpmnType>80</bpmnType>
-      <signalId>0</signalId>
-      <counterSign>false</counterSign>
-      <openInstances>0</openInstances>
-      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
-      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
-      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
-      <destinationStates/>
-      <digitalSignature>false</digitalSignature>
-      <executionType>0</executionType>
-    </ProcessState>
-    <ProcessState>
-      <processStatePK>
-        <companyId>1</companyId>
-        <processId>Conciliacao_contabil</processId>
-        <version>1</version>
-        <sequence>33</sequence>
-      </processStatePK>
-      <stateName>Gerar a contabilização</stateName>
-      <stateDescription>Gerar a contabilização</stateDescription>
-      <instruction></instruction>
-      <deadlineTime>0</deadlineTime>
-      <deadlineFieldName></deadlineFieldName>
-      <joint>false</joint>
-      <agreementPercentage>0</agreementPercentage>
-      <engineAllocationId></engineAllocationId>
-      <selectColleague>1</selectColleague>
-      <initialState>false</initialState>
-      <notifyAuthorityDelay>true</notifyAuthorityDelay>
-      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
-      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
-      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
-      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
-      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
-      <transferAttachments>false</transferAttachments>
-      <subProcessId></subProcessId>
-      <formFolder>0</formFolder>
-      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
-      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
-      <automatic>false</automatic>
-      <positionX>300</positionX>
-      <positionY>430</positionY>
       <forecastedEffortType>0</forecastedEffortType>
       <forecastedEffort>0</forecastedEffort>
       <notifyManagerFollowUp>false</notifyManagerFollowUp>
@@ -467,7 +422,8 @@
       <deadlineFieldName></deadlineFieldName>
       <joint>false</joint>
       <agreementPercentage>0</agreementPercentage>
-      <engineAllocationId></engineAllocationId>
+      <engineAllocationId>Pool Grupo</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Group&gt;GECONT&lt;/Group&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
       <selectColleague>1</selectColleague>
       <initialState>false</initialState>
       <notifyAuthorityDelay>true</notifyAuthorityDelay>
@@ -518,7 +474,8 @@
       <deadlineFieldName></deadlineFieldName>
       <joint>false</joint>
       <agreementPercentage>0</agreementPercentage>
-      <engineAllocationId></engineAllocationId>
+      <engineAllocationId>Pool Grupo</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Group&gt;GECONT&lt;/Group&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
       <selectColleague>1</selectColleague>
       <initialState>false</initialState>
       <notifyAuthorityDelay>true</notifyAuthorityDelay>
@@ -569,7 +526,8 @@
       <deadlineFieldName></deadlineFieldName>
       <joint>false</joint>
       <agreementPercentage>0</agreementPercentage>
-      <engineAllocationId></engineAllocationId>
+      <engineAllocationId>Pool Grupo</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Group&gt;GECONT&lt;/Group&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
       <selectColleague>1</selectColleague>
       <initialState>false</initialState>
       <notifyAuthorityDelay>true</notifyAuthorityDelay>
@@ -620,7 +578,8 @@
       <deadlineFieldName></deadlineFieldName>
       <joint>false</joint>
       <agreementPercentage>0</agreementPercentage>
-      <engineAllocationId></engineAllocationId>
+      <engineAllocationId>Pool Grupo</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Group&gt;GECONT&lt;/Group&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
       <selectColleague>1</selectColleague>
       <initialState>false</initialState>
       <notifyAuthorityDelay>true</notifyAuthorityDelay>
@@ -671,7 +630,8 @@
       <deadlineFieldName></deadlineFieldName>
       <joint>false</joint>
       <agreementPercentage>0</agreementPercentage>
-      <engineAllocationId></engineAllocationId>
+      <engineAllocationId>Pool Grupo</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Group&gt;GECONT&lt;/Group&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
       <selectColleague>1</selectColleague>
       <initialState>false</initialState>
       <notifyAuthorityDelay>true</notifyAuthorityDelay>
@@ -715,14 +675,15 @@
         <version>1</version>
         <sequence>53</sequence>
       </processStatePK>
-      <stateName>Validação</stateName>
-      <stateDescription>Validação</stateDescription>
+      <stateName>Todos os registros foram contabilizados?</stateName>
+      <stateDescription>Todos os registros foram contabilizados?</stateDescription>
       <instruction></instruction>
       <deadlineTime>0</deadlineTime>
       <deadlineFieldName></deadlineFieldName>
       <joint>false</joint>
       <agreementPercentage>0</agreementPercentage>
-      <engineAllocationId></engineAllocationId>
+      <engineAllocationId>Pool Grupo</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Group&gt;GECONT&lt;/Group&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
       <selectColleague>1</selectColleague>
       <initialState>false</initialState>
       <notifyAuthorityDelay>true</notifyAuthorityDelay>
@@ -738,58 +699,7 @@
       <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
       <automatic>false</automatic>
       <positionX>640</positionX>
-      <positionY>700</positionY>
-      <forecastedEffortType>0</forecastedEffortType>
-      <forecastedEffort>0</forecastedEffort>
-      <notifyManagerFollowUp>false</notifyManagerFollowUp>
-      <notifyManagerDelay>false</notifyManagerDelay>
-      <allowanceManagerTime>0</allowanceManagerTime>
-      <frequenceManagerTime>0</frequenceManagerTime>
-      <inhibitTransfer>false</inhibitTransfer>
-      <periodId></periodId>
-      <stateType>0</stateType>
-      <bpmnType>80</bpmnType>
-      <signalId>0</signalId>
-      <counterSign>false</counterSign>
-      <openInstances>0</openInstances>
-      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
-      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
-      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
-      <destinationStates/>
-      <digitalSignature>false</digitalSignature>
-      <executionType>0</executionType>
-    </ProcessState>
-    <ProcessState>
-      <processStatePK>
-        <companyId>1</companyId>
-        <processId>Conciliacao_contabil</processId>
-        <version>1</version>
-        <sequence>58</sequence>
-      </processStatePK>
-      <stateName>Processo de conciliação</stateName>
-      <stateDescription>Processo de conciliação</stateDescription>
-      <instruction></instruction>
-      <deadlineTime>0</deadlineTime>
-      <deadlineFieldName></deadlineFieldName>
-      <joint>false</joint>
-      <agreementPercentage>0</agreementPercentage>
-      <engineAllocationId></engineAllocationId>
-      <selectColleague>1</selectColleague>
-      <initialState>false</initialState>
-      <notifyAuthorityDelay>true</notifyAuthorityDelay>
-      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
-      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
-      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
-      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
-      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
-      <transferAttachments>false</transferAttachments>
-      <subProcessId></subProcessId>
-      <formFolder>0</formFolder>
-      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
-      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
-      <automatic>false</automatic>
-      <positionX>120</positionX>
-      <positionY>860</positionY>
+      <positionY>670</positionY>
       <forecastedEffortType>0</forecastedEffortType>
       <forecastedEffort>0</forecastedEffort>
       <notifyManagerFollowUp>false</notifyManagerFollowUp>
@@ -817,14 +727,15 @@
         <version>1</version>
         <sequence>61</sequence>
       </processStatePK>
-      <stateName>Receita</stateName>
-      <stateDescription>Receita</stateDescription>
+      <stateName>Ativo</stateName>
+      <stateDescription>Ativo</stateDescription>
       <instruction></instruction>
       <deadlineTime>0</deadlineTime>
       <deadlineFieldName></deadlineFieldName>
       <joint>false</joint>
       <agreementPercentage>0</agreementPercentage>
-      <engineAllocationId></engineAllocationId>
+      <engineAllocationId>Pool Grupo</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Group&gt;GECONT&lt;/Group&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
       <selectColleague>1</selectColleague>
       <initialState>false</initialState>
       <notifyAuthorityDelay>true</notifyAuthorityDelay>
@@ -868,14 +779,15 @@
         <version>1</version>
         <sequence>62</sequence>
       </processStatePK>
-      <stateName>Fopag</stateName>
-      <stateDescription>Fopag</stateDescription>
+      <stateName>Passivo</stateName>
+      <stateDescription>Passivo</stateDescription>
       <instruction></instruction>
       <deadlineTime>0</deadlineTime>
       <deadlineFieldName></deadlineFieldName>
       <joint>false</joint>
       <agreementPercentage>0</agreementPercentage>
-      <engineAllocationId></engineAllocationId>
+      <engineAllocationId>Pool Grupo</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Group&gt;GECONT&lt;/Group&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
       <selectColleague>1</selectColleague>
       <initialState>false</initialState>
       <notifyAuthorityDelay>true</notifyAuthorityDelay>
@@ -919,14 +831,15 @@
         <version>1</version>
         <sequence>63</sequence>
       </processStatePK>
-      <stateName>Disponível</stateName>
-      <stateDescription>Disponível</stateDescription>
+      <stateName>Receita orçamentária</stateName>
+      <stateDescription>Receita orçamentária</stateDescription>
       <instruction></instruction>
       <deadlineTime>0</deadlineTime>
       <deadlineFieldName></deadlineFieldName>
       <joint>false</joint>
       <agreementPercentage>0</agreementPercentage>
-      <engineAllocationId></engineAllocationId>
+      <engineAllocationId>Pool Grupo</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Group&gt;GECONT&lt;/Group&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
       <selectColleague>1</selectColleague>
       <initialState>false</initialState>
       <notifyAuthorityDelay>true</notifyAuthorityDelay>
@@ -970,14 +883,15 @@
         <version>1</version>
         <sequence>64</sequence>
       </processStatePK>
-      <stateName>Obrigações</stateName>
-      <stateDescription>Obrigações</stateDescription>
+      <stateName>Despesa orçamentária</stateName>
+      <stateDescription>Despesa orçamentária</stateDescription>
       <instruction></instruction>
       <deadlineTime>0</deadlineTime>
       <deadlineFieldName></deadlineFieldName>
       <joint>false</joint>
       <agreementPercentage>0</agreementPercentage>
-      <engineAllocationId></engineAllocationId>
+      <engineAllocationId>Pool Grupo</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Group&gt;GECONT&lt;/Group&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
       <selectColleague>1</selectColleague>
       <initialState>false</initialState>
       <notifyAuthorityDelay>true</notifyAuthorityDelay>
@@ -992,8 +906,8 @@
       <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
       <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
       <automatic>false</automatic>
-      <positionX>440</positionX>
-      <positionY>1010</positionY>
+      <positionX>580</positionX>
+      <positionY>1000</positionY>
       <forecastedEffortType>0</forecastedEffortType>
       <forecastedEffort>0</forecastedEffort>
       <notifyManagerFollowUp>false</notifyManagerFollowUp>
@@ -1021,14 +935,15 @@
         <version>1</version>
         <sequence>65</sequence>
       </processStatePK>
-      <stateName>Ativo</stateName>
-      <stateDescription>Ativo</stateDescription>
+      <stateName>Receita extra orçamentária</stateName>
+      <stateDescription>Receita extra orçamentária</stateDescription>
       <instruction></instruction>
       <deadlineTime>0</deadlineTime>
       <deadlineFieldName></deadlineFieldName>
       <joint>false</joint>
       <agreementPercentage>0</agreementPercentage>
-      <engineAllocationId></engineAllocationId>
+      <engineAllocationId>Pool Grupo</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Group&gt;GECONT&lt;/Group&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
       <selectColleague>1</selectColleague>
       <initialState>false</initialState>
       <notifyAuthorityDelay>true</notifyAuthorityDelay>
@@ -1043,8 +958,8 @@
       <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
       <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
       <automatic>false</automatic>
-      <positionX>620</positionX>
-      <positionY>1010</positionY>
+      <positionX>720</positionX>
+      <positionY>1000</positionY>
       <forecastedEffortType>0</forecastedEffortType>
       <forecastedEffort>0</forecastedEffort>
       <notifyManagerFollowUp>false</notifyManagerFollowUp>
@@ -1072,65 +987,15 @@
         <version>1</version>
         <sequence>66</sequence>
       </processStatePK>
-      <stateName>Estoque</stateName>
-      <stateDescription>Estoque</stateDescription>
+      <stateName>Despesa extra orçamentária</stateName>
+      <stateDescription>Despesa extra orçamentária</stateDescription>
       <instruction></instruction>
       <deadlineTime>0</deadlineTime>
       <deadlineFieldName></deadlineFieldName>
       <joint>false</joint>
       <agreementPercentage>0</agreementPercentage>
-      <engineAllocationId></engineAllocationId>
-      <selectColleague>1</selectColleague>
-      <initialState>false</initialState>
-      <notifyAuthorityDelay>true</notifyAuthorityDelay>
-      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
-      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
-      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
-      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
-      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
-      <transferAttachments>false</transferAttachments>
-      <subProcessId></subProcessId>
-      <formFolder>0</formFolder>
-      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
-      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
-      <automatic>false</automatic>
-      <positionX>750</positionX>
-      <positionY>1010</positionY>
-      <forecastedEffortType>0</forecastedEffortType>
-      <forecastedEffort>0</forecastedEffort>
-      <notifyManagerFollowUp>false</notifyManagerFollowUp>
-      <notifyManagerDelay>false</notifyManagerDelay>
-      <allowanceManagerTime>0</allowanceManagerTime>
-      <frequenceManagerTime>0</frequenceManagerTime>
-      <inhibitTransfer>false</inhibitTransfer>
-      <periodId></periodId>
-      <stateType>0</stateType>
-      <bpmnType>80</bpmnType>
-      <signalId>0</signalId>
-      <counterSign>false</counterSign>
-      <openInstances>0</openInstances>
-      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
-      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
-      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
-      <destinationStates/>
-      <digitalSignature>false</digitalSignature>
-      <executionType>0</executionType>
-    </ProcessState>
-    <ProcessState>
-      <processStatePK>
-        <companyId>1</companyId>
-        <processId>Conciliacao_contabil</processId>
-        <version>1</version>
-        <sequence>67</sequence>
-      </processStatePK>
-      <stateName>Despesa</stateName>
-      <stateDescription>Despesa</stateDescription>
-      <instruction></instruction>
-      <deadlineTime>0</deadlineTime>
-      <deadlineFieldName></deadlineFieldName>
-      <joint>false</joint>
-      <agreementPercentage>0</agreementPercentage>
-      <engineAllocationId></engineAllocationId>
+      <engineAllocationId>Pool Grupo</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Group&gt;GECONT&lt;/Group&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
       <selectColleague>1</selectColleague>
       <initialState>false</initialState>
       <notifyAuthorityDelay>true</notifyAuthorityDelay>
@@ -1146,7 +1011,7 @@
       <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
       <automatic>false</automatic>
       <positionX>880</positionX>
-      <positionY>1010</positionY>
+      <positionY>1000</positionY>
       <forecastedEffortType>0</forecastedEffortType>
       <forecastedEffort>0</forecastedEffort>
       <notifyManagerFollowUp>false</notifyManagerFollowUp>
@@ -1174,14 +1039,15 @@
         <version>1</version>
         <sequence>76</sequence>
       </processStatePK>
-      <stateName>Conciliação</stateName>
-      <stateDescription>Conciliação</stateDescription>
+      <stateName>Conciliação ok?</stateName>
+      <stateDescription>Conciliação ok?</stateDescription>
       <instruction></instruction>
       <deadlineTime>0</deadlineTime>
       <deadlineFieldName></deadlineFieldName>
       <joint>false</joint>
       <agreementPercentage>0</agreementPercentage>
-      <engineAllocationId></engineAllocationId>
+      <engineAllocationId>Pool Grupo</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Group&gt;GECONT&lt;/Group&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
       <selectColleague>1</selectColleague>
       <initialState>false</initialState>
       <notifyAuthorityDelay>true</notifyAuthorityDelay>
@@ -1225,14 +1091,15 @@
         <version>1</version>
         <sequence>89</sequence>
       </processStatePK>
-      <stateName>Efetivar Conciliação</stateName>
-      <stateDescription>Efetivar Conciliação</stateDescription>
+      <stateName>Efetivação no Protheus</stateName>
+      <stateDescription>Efetivação no Protheus</stateDescription>
       <instruction></instruction>
       <deadlineTime>0</deadlineTime>
       <deadlineFieldName></deadlineFieldName>
       <joint>false</joint>
       <agreementPercentage>0</agreementPercentage>
-      <engineAllocationId></engineAllocationId>
+      <engineAllocationId>Pool Grupo</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Group&gt;GECONT&lt;/Group&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
       <selectColleague>1</selectColleague>
       <initialState>false</initialState>
       <notifyAuthorityDelay>true</notifyAuthorityDelay>
@@ -1283,7 +1150,8 @@
       <deadlineFieldName></deadlineFieldName>
       <joint>false</joint>
       <agreementPercentage>0</agreementPercentage>
-      <engineAllocationId></engineAllocationId>
+      <engineAllocationId>Pool Grupo</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Group&gt;GECONT&lt;/Group&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
       <selectColleague>1</selectColleague>
       <initialState>false</initialState>
       <notifyAuthorityDelay>true</notifyAuthorityDelay>
@@ -1298,7 +1166,7 @@
       <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
       <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
       <automatic>false</automatic>
-      <positionX>260</positionX>
+      <positionX>50</positionX>
       <positionY>1600</positionY>
       <forecastedEffortType>0</forecastedEffortType>
       <forecastedEffort>0</forecastedEffort>
@@ -1349,58 +1217,8 @@
       <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
       <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
       <automatic>false</automatic>
-      <positionX>500</positionX>
+      <positionX>200</positionX>
       <positionY>1600</positionY>
-      <forecastedEffortType>0</forecastedEffortType>
-      <forecastedEffort>0</forecastedEffort>
-      <notifyManagerFollowUp>false</notifyManagerFollowUp>
-      <notifyManagerDelay>false</notifyManagerDelay>
-      <allowanceManagerTime>0</allowanceManagerTime>
-      <frequenceManagerTime>0</frequenceManagerTime>
-      <inhibitTransfer>false</inhibitTransfer>
-      <periodId></periodId>
-      <stateType>0</stateType>
-      <bpmnType>80</bpmnType>
-      <signalId>0</signalId>
-      <counterSign>false</counterSign>
-      <openInstances>0</openInstances>
-      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
-      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
-      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
-      <destinationStates/>
-      <digitalSignature>false</digitalSignature>
-      <executionType>0</executionType>
-    </ProcessState>
-    <ProcessState>
-      <processStatePK>
-        <companyId>1</companyId>
-        <processId>Conciliacao_contabil</processId>
-        <version>1</version>
-        <sequence>104</sequence>
-      </processStatePK>
-      <stateName>Analisar e contabillizar novamente</stateName>
-      <stateDescription>Analisar e contabillizar novamente</stateDescription>
-      <instruction></instruction>
-      <deadlineTime>0</deadlineTime>
-      <deadlineFieldName></deadlineFieldName>
-      <joint>false</joint>
-      <agreementPercentage>0</agreementPercentage>
-      <selectColleague>1</selectColleague>
-      <initialState>false</initialState>
-      <notifyAuthorityDelay>true</notifyAuthorityDelay>
-      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
-      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
-      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
-      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
-      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
-      <transferAttachments>false</transferAttachments>
-      <subProcessId></subProcessId>
-      <formFolder>0</formFolder>
-      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
-      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
-      <automatic>false</automatic>
-      <positionX>850</positionX>
-      <positionY>440</positionY>
       <forecastedEffortType>0</forecastedEffortType>
       <forecastedEffort>0</forecastedEffort>
       <notifyManagerFollowUp>false</notifyManagerFollowUp>
@@ -1435,6 +1253,8 @@
       <deadlineFieldName></deadlineFieldName>
       <joint>false</joint>
       <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Pool Grupo</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Group&gt;GECONT&lt;/Group&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
       <selectColleague>1</selectColleague>
       <initialState>false</initialState>
       <notifyAuthorityDelay>true</notifyAuthorityDelay>
@@ -1476,15 +1296,17 @@
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
         <version>1</version>
-        <sequence>113</sequence>
+        <sequence>141</sequence>
       </processStatePK>
-      <stateName>Assinatura do balancetes</stateName>
-      <stateDescription>Assinatura do balancetes</stateDescription>
+      <stateName>ASSJUR</stateName>
+      <stateDescription>ASSJUR</stateDescription>
       <instruction></instruction>
       <deadlineTime>0</deadlineTime>
       <deadlineFieldName></deadlineFieldName>
       <joint>false</joint>
       <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Pool Grupo</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Group&gt;ASSJUR&lt;/Group&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
       <selectColleague>1</selectColleague>
       <initialState>false</initialState>
       <notifyAuthorityDelay>true</notifyAuthorityDelay>
@@ -1499,8 +1321,8 @@
       <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
       <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
       <automatic>false</automatic>
-      <positionX>690</positionX>
-      <positionY>1600</positionY>
+      <positionX>890</positionX>
+      <positionY>187</positionY>
       <forecastedEffortType>0</forecastedEffortType>
       <forecastedEffort>0</forecastedEffort>
       <notifyManagerFollowUp>false</notifyManagerFollowUp>
@@ -1520,6 +1342,552 @@
       <destinationStates/>
       <digitalSignature>false</digitalSignature>
       <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>1</version>
+        <sequence>146</sequence>
+      </processStatePK>
+      <stateName>Obtem assinantes e envia pedido para Vert</stateName>
+      <stateDescription>Obtem assinantes e envia pedido para Vert</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>380</positionX>
+      <positionY>1540</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>82</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>1</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>1</version>
+        <sequence>147</sequence>
+      </processStatePK>
+      <stateName>Realizar upload do pedido</stateName>
+      <stateDescription>Realizar upload do pedido</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>560</positionX>
+      <positionY>1540</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>82</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>1</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>1</version>
+        <sequence>148</sequence>
+      </processStatePK>
+      <stateName>Anexa documento assinado</stateName>
+      <stateDescription>Anexa documento assinado</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>790</positionX>
+      <positionY>1550</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>82</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>1</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>1</version>
+        <sequence>153</sequence>
+      </processStatePK>
+      <stateName>Erro ao Obter assinantes</stateName>
+      <stateDescription>Erro ao Obter assinantes</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Executor Atividade</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;BaseActivity&gt;146&lt;/BaseActivity&gt;&lt;Returns&gt;Last&lt;/Returns&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>380</positionX>
+      <positionY>1700</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>1</version>
+        <sequence>154</sequence>
+      </processStatePK>
+      <stateName>Erro ao realizar upload</stateName>
+      <stateDescription>Erro ao realizar upload</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Executor Atividade</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;BaseActivity&gt;147&lt;/BaseActivity&gt;&lt;Returns&gt;Last&lt;/Returns&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>560</positionX>
+      <positionY>1690</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>1</version>
+        <sequence>155</sequence>
+      </processStatePK>
+      <stateName>Erro ao anexar</stateName>
+      <stateDescription>Erro ao anexar</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Executor Atividade</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;BaseActivity&gt;148&lt;/BaseActivity&gt;&lt;Returns&gt;Last&lt;/Returns&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>800</positionX>
+      <positionY>1700</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>1</version>
+        <sequence>168</sequence>
+      </processStatePK>
+      <stateName>Reprocessamento no Protheus</stateName>
+      <stateDescription>Reprocessamento no Protheus</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Pool Grupo</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Group&gt;GECONT&lt;/Group&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>180</positionX>
+      <positionY>1380</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>1</version>
+        <sequence>149</sequence>
+      </processStatePK>
+      <stateName>Intermediário</stateName>
+      <stateDescription>Intermediário</stateDescription>
+      <instruction>Evento intermediário do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>1</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>720</positionX>
+      <positionY>1630</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>35</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <parentSequence>0</parentSequence>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>1</version>
+        <sequence>150</sequence>
+      </processStatePK>
+      <stateName>Intermediário</stateName>
+      <stateDescription>Intermediário</stateDescription>
+      <instruction>Evento intermediário do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>1</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>460</positionX>
+      <positionY>1620</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>43</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <parentSequence>146</parentSequence>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>1</version>
+        <sequence>151</sequence>
+      </processStatePK>
+      <stateName>Intermediário</stateName>
+      <stateDescription>Intermediário</stateDescription>
+      <instruction>Evento intermediário do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>1</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>636</positionX>
+      <positionY>1610</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>43</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <parentSequence>147</parentSequence>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>1</version>
+        <sequence>152</sequence>
+      </processStatePK>
+      <stateName>Intermediário</stateName>
+      <stateDescription>Intermediário</stateDescription>
+      <instruction>Evento intermediário do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>1</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>866</positionX>
+      <positionY>1620</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>43</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <parentSequence>148</parentSequence>
     </ProcessState>
     <ProcessState>
       <processStatePK>
@@ -1586,8 +1954,8 @@
       <subProcessId></subProcessId>
       <formFolder>0</formFolder>
       <automatic>false</automatic>
-      <positionX>430</positionX>
-      <positionY>430</positionY>
+      <positionX>420</positionX>
+      <positionY>440</positionY>
       <inhibitTransfer>false</inhibitTransfer>
       <stateType>3</stateType>
       <bpmnType>126</bpmnType>
@@ -1637,7 +2005,7 @@
       <formFolder>0</formFolder>
       <automatic>true</automatic>
       <positionX>880</positionX>
-      <positionY>670</positionY>
+      <positionY>680</positionY>
       <inhibitTransfer>false</inhibitTransfer>
       <stateType>1</stateType>
       <bpmnType>120</bpmnType>
@@ -1728,16 +2096,16 @@
         <version>1</version>
         <sequence>91</sequence>
       </processStatePK>
-      <stateName>Reprocessamento?</stateName>
-      <stateDescription>Reprocessamento?</stateDescription>
+      <stateName>Aprovar Reprocessamento?</stateName>
+      <stateDescription>Aprovar Reprocessamento?</stateDescription>
       <joint>false</joint>
       <initialState>false</initialState>
       <transferAttachments>false</transferAttachments>
       <subProcessId></subProcessId>
       <formFolder>0</formFolder>
       <automatic>true</automatic>
-      <positionX>510</positionX>
-      <positionY>1400</positionY>
+      <positionX>70</positionX>
+      <positionY>1300</positionY>
       <inhibitTransfer>false</inhibitTransfer>
       <stateType>1</stateType>
       <bpmnType>120</bpmnType>
@@ -1753,8 +2121,8 @@
         <version>1</version>
         <sequence>110</sequence>
       </processStatePK>
-      <stateName>Aprovar análise?</stateName>
-      <stateDescription>Aprovar análise?</stateDescription>
+      <stateName>Aprovar Conciliação?</stateName>
+      <stateDescription>Aprovar Conciliação?</stateDescription>
       <joint>false</joint>
       <initialState>false</initialState>
       <transferAttachments>false</transferAttachments>
@@ -1762,7 +2130,7 @@
       <formFolder>0</formFolder>
       <automatic>true</automatic>
       <positionX>310</positionX>
-      <positionY>1310</positionY>
+      <positionY>1280</positionY>
       <inhibitTransfer>false</inhibitTransfer>
       <stateType>1</stateType>
       <bpmnType>120</bpmnType>
@@ -1800,8 +2168,8 @@
       <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
       <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
       <automatic>false</automatic>
-      <positionX>890</positionX>
-      <positionY>1631</positionY>
+      <positionX>940</positionX>
+      <positionY>1640</positionY>
       <forecastedEffortType>0</forecastedEffortType>
       <forecastedEffort>0</forecastedEffort>
       <notifyManagerFollowUp>false</notifyManagerFollowUp>
@@ -1825,11 +2193,11 @@
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
         <expressionOrder>1</expressionOrder>
-        <version>8</version>
+        <version>17</version>
         <sequence>55</sequence>
       </conditionProcessStatePK>
       <condition></condition>
-      <destinationSequenceId>58</destinationSequenceId>
+      <destinationSequenceId>60</destinationSequenceId>
       <conditionType>1</conditionType>
     </ConditionProcessState>
     <ConditionProcessState>
@@ -1837,11 +2205,11 @@
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
         <expressionOrder>2</expressionOrder>
-        <version>8</version>
+        <version>17</version>
         <sequence>55</sequence>
       </conditionProcessStatePK>
       <condition></condition>
-      <destinationSequenceId>104</destinationSequenceId>
+      <destinationSequenceId>35</destinationSequenceId>
       <conditionType>1</conditionType>
     </ConditionProcessState>
     <ConditionProcessState>
@@ -1849,7 +2217,7 @@
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
         <expressionOrder>1</expressionOrder>
-        <version>8</version>
+        <version>17</version>
         <sequence>77</sequence>
       </conditionProcessStatePK>
       <condition></condition>
@@ -1861,7 +2229,7 @@
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
         <expressionOrder>2</expressionOrder>
-        <version>8</version>
+        <version>17</version>
         <sequence>77</sequence>
       </conditionProcessStatePK>
       <condition></condition>
@@ -1873,7 +2241,7 @@
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
         <expressionOrder>1</expressionOrder>
-        <version>8</version>
+        <version>17</version>
         <sequence>91</sequence>
       </conditionProcessStatePK>
       <condition></condition>
@@ -1885,11 +2253,11 @@
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
         <expressionOrder>2</expressionOrder>
-        <version>8</version>
+        <version>17</version>
         <sequence>91</sequence>
       </conditionProcessStatePK>
       <condition></condition>
-      <destinationSequenceId>98</destinationSequenceId>
+      <destinationSequenceId>76</destinationSequenceId>
       <conditionType>1</conditionType>
     </ConditionProcessState>
     <ConditionProcessState>
@@ -1897,12 +2265,24 @@
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
         <expressionOrder>1</expressionOrder>
-        <version>8</version>
+        <version>17</version>
         <sequence>110</sequence>
       </conditionProcessStatePK>
-      <condition>a=a</condition>
-      <destinationSequenceId>91</destinationSequenceId>
-      <conditionType>0</conditionType>
+      <condition></condition>
+      <destinationSequenceId>168</destinationSequenceId>
+      <conditionType>1</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <expressionOrder>2</expressionOrder>
+        <version>17</version>
+        <sequence>110</sequence>
+      </conditionProcessStatePK>
+      <condition></condition>
+      <destinationSequenceId>76</destinationSequenceId>
+      <conditionType>1</conditionType>
     </ConditionProcessState>
   </list>
   <list>
@@ -2171,46 +2551,6 @@
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
         <version>1</version>
-        <linkSequence>34</linkSequence>
-      </processLinkPK>
-      <actionLabel></actionLabel>
-      <returnPermited>false</returnPermited>
-      <initialStateSequence>6</initialStateSequence>
-      <finalStateSequence>33</finalStateSequence>
-      <returnLabel></returnLabel>
-      <name></name>
-      <automaticLink>false</automaticLink>
-      <defaultLink>false</defaultLink>
-      <type>0</type>
-      <movementTitle></movementTitle>
-      <movementDescription></movementDescription>
-      <movementAccessLinkDescription></movementAccessLinkDescription>
-    </ProcessLink>
-    <ProcessLink>
-      <processLinkPK>
-        <companyId>1</companyId>
-        <processId>Conciliacao_contabil</processId>
-        <version>1</version>
-        <linkSequence>42</linkSequence>
-      </processLinkPK>
-      <actionLabel></actionLabel>
-      <returnPermited>false</returnPermited>
-      <initialStateSequence>33</initialStateSequence>
-      <finalStateSequence>35</finalStateSequence>
-      <returnLabel></returnLabel>
-      <name></name>
-      <automaticLink>false</automaticLink>
-      <defaultLink>false</defaultLink>
-      <type>0</type>
-      <movementTitle></movementTitle>
-      <movementDescription></movementDescription>
-      <movementAccessLinkDescription></movementAccessLinkDescription>
-    </ProcessLink>
-    <ProcessLink>
-      <processLinkPK>
-        <companyId>1</companyId>
-        <processId>Conciliacao_contabil</processId>
-        <version>1</version>
         <linkSequence>43</linkSequence>
       </processLinkPK>
       <actionLabel></actionLabel>
@@ -2451,46 +2791,6 @@
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
         <version>1</version>
-        <linkSequence>59</linkSequence>
-      </processLinkPK>
-      <actionLabel></actionLabel>
-      <returnPermited>false</returnPermited>
-      <initialStateSequence>55</initialStateSequence>
-      <finalStateSequence>58</finalStateSequence>
-      <returnLabel></returnLabel>
-      <name>Sim</name>
-      <automaticLink>false</automaticLink>
-      <defaultLink>false</defaultLink>
-      <type>0</type>
-      <movementTitle></movementTitle>
-      <movementDescription></movementDescription>
-      <movementAccessLinkDescription></movementAccessLinkDescription>
-    </ProcessLink>
-    <ProcessLink>
-      <processLinkPK>
-        <companyId>1</companyId>
-        <processId>Conciliacao_contabil</processId>
-        <version>1</version>
-        <linkSequence>68</linkSequence>
-      </processLinkPK>
-      <actionLabel></actionLabel>
-      <returnPermited>false</returnPermited>
-      <initialStateSequence>58</initialStateSequence>
-      <finalStateSequence>60</finalStateSequence>
-      <returnLabel></returnLabel>
-      <name></name>
-      <automaticLink>false</automaticLink>
-      <defaultLink>false</defaultLink>
-      <type>0</type>
-      <movementTitle></movementTitle>
-      <movementDescription></movementDescription>
-      <movementAccessLinkDescription></movementAccessLinkDescription>
-    </ProcessLink>
-    <ProcessLink>
-      <processLinkPK>
-        <companyId>1</companyId>
-        <processId>Conciliacao_contabil</processId>
-        <version>1</version>
         <linkSequence>69</linkSequence>
       </processLinkPK>
       <actionLabel></actionLabel>
@@ -2597,26 +2897,6 @@
       <returnPermited>false</returnPermited>
       <initialStateSequence>60</initialStateSequence>
       <finalStateSequence>66</finalStateSequence>
-      <returnLabel></returnLabel>
-      <name></name>
-      <automaticLink>false</automaticLink>
-      <defaultLink>false</defaultLink>
-      <type>0</type>
-      <movementTitle></movementTitle>
-      <movementDescription></movementDescription>
-      <movementAccessLinkDescription></movementAccessLinkDescription>
-    </ProcessLink>
-    <ProcessLink>
-      <processLinkPK>
-        <companyId>1</companyId>
-        <processId>Conciliacao_contabil</processId>
-        <version>1</version>
-        <linkSequence>75</linkSequence>
-      </processLinkPK>
-      <actionLabel></actionLabel>
-      <returnPermited>false</returnPermited>
-      <initialStateSequence>60</initialStateSequence>
-      <finalStateSequence>67</finalStateSequence>
       <returnLabel></returnLabel>
       <name></name>
       <automaticLink>false</automaticLink>
@@ -2751,26 +3031,6 @@
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
         <version>1</version>
-        <linkSequence>86</linkSequence>
-      </processLinkPK>
-      <actionLabel></actionLabel>
-      <returnPermited>false</returnPermited>
-      <initialStateSequence>67</initialStateSequence>
-      <finalStateSequence>79</finalStateSequence>
-      <returnLabel></returnLabel>
-      <name></name>
-      <automaticLink>false</automaticLink>
-      <defaultLink>false</defaultLink>
-      <type>0</type>
-      <movementTitle></movementTitle>
-      <movementDescription></movementDescription>
-      <movementAccessLinkDescription></movementAccessLinkDescription>
-    </ProcessLink>
-    <ProcessLink>
-      <processLinkPK>
-        <companyId>1</companyId>
-        <processId>Conciliacao_contabil</processId>
-        <version>1</version>
         <linkSequence>87</linkSequence>
       </processLinkPK>
       <actionLabel></actionLabel>
@@ -2871,40 +3131,6 @@
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
         <version>1</version>
-        <linkSequence>105</linkSequence>
-      </processLinkPK>
-      <actionLabel></actionLabel>
-      <returnPermited>false</returnPermited>
-      <initialStateSequence>55</initialStateSequence>
-      <finalStateSequence>104</finalStateSequence>
-      <returnLabel></returnLabel>
-      <name></name>
-      <automaticLink>false</automaticLink>
-      <defaultLink>false</defaultLink>
-      <type>0</type>
-    </ProcessLink>
-    <ProcessLink>
-      <processLinkPK>
-        <companyId>1</companyId>
-        <processId>Conciliacao_contabil</processId>
-        <version>1</version>
-        <linkSequence>106</linkSequence>
-      </processLinkPK>
-      <actionLabel></actionLabel>
-      <returnPermited>false</returnPermited>
-      <initialStateSequence>104</initialStateSequence>
-      <finalStateSequence>35</finalStateSequence>
-      <returnLabel></returnLabel>
-      <name></name>
-      <automaticLink>false</automaticLink>
-      <defaultLink>false</defaultLink>
-      <type>0</type>
-    </ProcessLink>
-    <ProcessLink>
-      <processLinkPK>
-        <companyId>1</companyId>
-        <processId>Conciliacao_contabil</processId>
-        <version>1</version>
         <linkSequence>108</linkSequence>
       </processLinkPK>
       <actionLabel></actionLabel>
@@ -2956,12 +3182,29 @@
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
         <version>1</version>
-        <linkSequence>112</linkSequence>
+        <linkSequence>116</linkSequence>
       </processLinkPK>
       <actionLabel></actionLabel>
       <returnPermited>false</returnPermited>
       <initialStateSequence>110</initialStateSequence>
-      <finalStateSequence>91</finalStateSequence>
+      <finalStateSequence>76</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>Não</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>1</version>
+        <linkSequence>142</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>7</initialStateSequence>
+      <finalStateSequence>141</finalStateSequence>
       <returnLabel></returnLabel>
       <name></name>
       <automaticLink>false</automaticLink>
@@ -2973,12 +3216,29 @@
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
         <version>1</version>
-        <linkSequence>114</linkSequence>
+        <linkSequence>143</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>141</initialStateSequence>
+      <finalStateSequence>6</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>1</version>
+        <linkSequence>156</linkSequence>
       </processLinkPK>
       <actionLabel></actionLabel>
       <returnPermited>false</returnPermited>
       <initialStateSequence>99</initialStateSequence>
-      <finalStateSequence>113</finalStateSequence>
+      <finalStateSequence>146</finalStateSequence>
       <returnLabel></returnLabel>
       <name></name>
       <automaticLink>false</automaticLink>
@@ -2990,11 +3250,164 @@
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
         <version>1</version>
-        <linkSequence>115</linkSequence>
+        <linkSequence>157</linkSequence>
       </processLinkPK>
       <actionLabel></actionLabel>
       <returnPermited>false</returnPermited>
-      <initialStateSequence>113</initialStateSequence>
+      <initialStateSequence>150</initialStateSequence>
+      <finalStateSequence>153</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>1</version>
+        <linkSequence>158</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>153</initialStateSequence>
+      <finalStateSequence>146</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>1</version>
+        <linkSequence>159</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>146</initialStateSequence>
+      <finalStateSequence>147</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>1</version>
+        <linkSequence>161</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>151</initialStateSequence>
+      <finalStateSequence>154</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>1</version>
+        <linkSequence>162</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>154</initialStateSequence>
+      <finalStateSequence>147</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>1</version>
+        <linkSequence>163</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>147</initialStateSequence>
+      <finalStateSequence>149</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>1</version>
+        <linkSequence>164</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>149</initialStateSequence>
+      <finalStateSequence>148</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>1</version>
+        <linkSequence>165</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>152</initialStateSequence>
+      <finalStateSequence>155</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>1</version>
+        <linkSequence>166</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>155</initialStateSequence>
+      <finalStateSequence>148</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>1</version>
+        <linkSequence>167</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>148</initialStateSequence>
       <finalStateSequence>100</finalStateSequence>
       <returnLabel></returnLabel>
       <name></name>
@@ -3007,12 +3420,97 @@
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
         <version>1</version>
-        <linkSequence>116</linkSequence>
+        <linkSequence>169</linkSequence>
       </processLinkPK>
       <actionLabel></actionLabel>
       <returnPermited>false</returnPermited>
       <initialStateSequence>110</initialStateSequence>
+      <finalStateSequence>168</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>Sim</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>1</version>
+        <linkSequence>170</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>91</initialStateSequence>
       <finalStateSequence>76</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>Não</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>1</version>
+        <linkSequence>171</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>168</initialStateSequence>
+      <finalStateSequence>91</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>1</version>
+        <linkSequence>172</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>6</initialStateSequence>
+      <finalStateSequence>35</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>1</version>
+        <linkSequence>173</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>55</initialStateSequence>
+      <finalStateSequence>35</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>1</version>
+        <linkSequence>174</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>55</initialStateSequence>
+      <finalStateSequence>60</finalStateSequence>
       <returnLabel></returnLabel>
       <name></name>
       <automaticLink>false</automaticLink>
@@ -3021,7 +3519,49 @@
     </ProcessLink>
   </list>
   <list/>
-  <list/>
+  <list>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>intermediateconditional149</eventId>
+        <processId>Conciliacao_contabil</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function intermediateconditional149() {
+
+}</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>servicetask146</eventId>
+        <processId>Conciliacao_contabil</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function servicetask146(attempt, message) {
+}</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>servicetask148</eventId>
+        <processId>Conciliacao_contabil</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function servicetask148(attempt, message) {
+}</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>servicetask147</eventId>
+        <processId>Conciliacao_contabil</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function servicetask147(attempt, message) {
+}</eventDescription>
+    </WorkflowProcessEvent>
+  </list>
   <list/>
   <list>
     <SwimLane>
@@ -3041,6 +3581,22 @@
       </swimLanePK>
     </SwimLane>
     <SwimLane>
+      <color>d0daae</color>
+      <height>291</height>
+      <width>1011</width>
+      <positionX>0</positionX>
+      <positionY>1520</positionY>
+      <stateName>Fase de Fechamento: Até dia 28</stateName>
+      <type>2</type>
+      <parentSequence>0</parentSequence>
+      <swimLanePK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>1</version>
+        <sequence>2</sequence>
+      </swimLanePK>
+    </SwimLane>
+    <SwimLane>
       <color>82b0b7</color>
       <height>421</height>
       <width>1011</width>
@@ -3053,7 +3609,7 @@
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
         <version>1</version>
-        <sequence>2</sequence>
+        <sequence>3</sequence>
       </swimLanePK>
     </SwimLane>
     <SwimLane>
@@ -3063,22 +3619,6 @@
       <positionX>0</positionX>
       <positionY>800</positionY>
       <stateName>Fase de Conciliação: Até dia 25</stateName>
-      <type>2</type>
-      <parentSequence>0</parentSequence>
-      <swimLanePK>
-        <companyId>1</companyId>
-        <processId>Conciliacao_contabil</processId>
-        <version>1</version>
-        <sequence>3</sequence>
-      </swimLanePK>
-    </SwimLane>
-    <SwimLane>
-      <color>d0daae</color>
-      <height>221</height>
-      <width>1011</width>
-      <positionX>0</positionX>
-      <positionY>1520</positionY>
-      <stateName>Fase de Fechamento: Até dia 28</stateName>
       <type>2</type>
       <parentSequence>0</parentSequence>
       <swimLanePK>
@@ -3128,7 +3668,7 @@
     </ProcessComponGraf>
     <ProcessComponGraf>
       <componType>1</componType>
-      <positionX>570</positionX>
+      <positionX>540</positionX>
       <positionY>20</positionY>
       <processComponGrafPK>
         <companyId>1</companyId>
@@ -3140,7 +3680,7 @@
     </ProcessComponGraf>
     <ProcessComponGraf>
       <componType>1</componType>
-      <positionX>700</positionX>
+      <positionX>650</positionX>
       <positionY>10</positionY>
       <processComponGrafPK>
         <companyId>1</companyId>
@@ -3148,11 +3688,11 @@
         <version>1</version>
         <componGrafSequence>124</componGrafSequence>
       </processComponGrafPK>
-      <stateName>Validar a movimentação do aditivo flixo</stateName>
+      <stateName>Validar a movimentação do Ativo fixo</stateName>
     </ProcessComponGraf>
     <ProcessComponGraf>
       <componType>1</componType>
-      <positionX>830</positionX>
+      <positionX>780</positionX>
       <positionY>10</positionY>
       <processComponGrafPK>
         <companyId>1</companyId>
@@ -3165,7 +3705,7 @@
     <ProcessComponGraf>
       <componType>1</componType>
       <positionX>40</positionX>
-      <positionY>340</positionY>
+      <positionY>460</positionY>
       <processComponGrafPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
@@ -3176,8 +3716,8 @@
     </ProcessComponGraf>
     <ProcessComponGraf>
       <componType>1</componType>
-      <positionX>170</positionX>
-      <positionY>330</positionY>
+      <positionX>160</positionX>
+      <positionY>410</positionY>
       <processComponGrafPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
@@ -3224,18 +3764,6 @@
     </ProcessComponGraf>
     <ProcessComponGraf>
       <componType>1</componType>
-      <positionX>30</positionX>
-      <positionY>1530</positionY>
-      <processComponGrafPK>
-        <companyId>1</companyId>
-        <processId>Conciliacao_contabil</processId>
-        <version>1</version>
-        <componGrafSequence>139</componGrafSequence>
-      </processComponGrafPK>
-      <stateName>Disponibilizar para conferncia do gerente</stateName>
-    </ProcessComponGraf>
-    <ProcessComponGraf>
-      <componType>1</componType>
       <positionX>10</positionX>
       <positionY>810</positionY>
       <processComponGrafPK>
@@ -3245,6 +3773,18 @@
         <componGrafSequence>140</componGrafSequence>
       </processComponGrafPK>
       <stateName>Gerar planilha CT2</stateName>
+    </ProcessComponGraf>
+    <ProcessComponGraf>
+      <componType>1</componType>
+      <positionX>890</positionX>
+      <positionY>10</positionY>
+      <processComponGrafPK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>1</version>
+        <componGrafSequence>144</componGrafSequence>
+      </processComponGrafPK>
+      <stateName>Validar e atualizar a contabilidade manualmente</stateName>
     </ProcessComponGraf>
   </list>
   <list>
@@ -3358,13 +3898,23 @@
       <initialStateSequence>137</initialStateSequence>
       <finalStateSequence>41</finalStateSequence>
     </ProcessLinkAssoc>
+    <ProcessLinkAssoc>
+      <processLinkAssocPK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>1</version>
+        <linkSequence>145</linkSequence>
+      </processLinkAssocPK>
+      <initialStateSequence>144</initialStateSequence>
+      <finalStateSequence>141</finalStateSequence>
+    </ProcessLinkAssoc>
   </list>
   <list>
     <ProcessLinkBend>
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>16</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -3375,7 +3925,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>17</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -3386,7 +3936,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>17</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -3397,7 +3947,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>18</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -3408,7 +3958,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>18</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -3419,7 +3969,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>19</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -3430,7 +3980,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>19</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -3441,7 +3991,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>20</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -3452,7 +4002,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>20</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -3463,7 +4013,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>20</linkSequence>
         <bendSequence>3</bendSequence>
       </processLinkBendPK>
@@ -3474,7 +4024,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>21</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -3485,7 +4035,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>21</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -3496,7 +4046,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>21</linkSequence>
         <bendSequence>3</bendSequence>
       </processLinkBendPK>
@@ -3507,7 +4057,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>22</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -3518,7 +4068,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>22</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -3529,95 +4079,95 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>22</linkSequence>
         <bendSequence>3</bendSequence>
       </processLinkBendPK>
-      <positionX>847</positionX>
+      <positionX>830</positionX>
       <positionY>146</positionY>
     </ProcessLinkBend>
     <ProcessLinkBend>
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>25</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
       <positionX>92</positionX>
-      <positionY>288</positionY>
+      <positionY>307</positionY>
     </ProcessLinkBend>
     <ProcessLinkBend>
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>25</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
       <positionX>450</positionX>
-      <positionY>288</positionY>
+      <positionY>307</positionY>
     </ProcessLinkBend>
     <ProcessLinkBend>
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>26</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
-      <positionX>209</positionX>
-      <positionY>292</positionY>
+      <positionX>212</positionX>
+      <positionY>309</positionY>
     </ProcessLinkBend>
     <ProcessLinkBend>
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>26</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
-      <positionX>447</positionX>
-      <positionY>292</positionY>
+      <positionX>448</positionX>
+      <positionY>309</positionY>
     </ProcessLinkBend>
     <ProcessLinkBend>
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>27</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
       <positionX>333</positionX>
-      <positionY>293</positionY>
+      <positionY>312</positionY>
     </ProcessLinkBend>
     <ProcessLinkBend>
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>27</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
-      <positionX>445</positionX>
-      <positionY>293</positionY>
+      <positionX>448</positionX>
+      <positionY>312</positionY>
     </ProcessLinkBend>
     <ProcessLinkBend>
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>28</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
-      <positionX>566</positionX>
+      <positionX>563</positionX>
       <positionY>296</positionY>
     </ProcessLinkBend>
     <ProcessLinkBend>
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>28</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -3628,84 +4178,51 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>29</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
-      <positionX>699</positionX>
-      <positionY>292</positionY>
+      <positionX>702</positionX>
+      <positionY>299</positionY>
     </ProcessLinkBend>
     <ProcessLinkBend>
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>29</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
-      <positionX>572</positionX>
-      <positionY>292</positionY>
-    </ProcessLinkBend>
-    <ProcessLinkBend>
-      <processLinkBendPK>
-        <companyId>1</companyId>
-        <processId>Conciliacao_contabil</processId>
-        <version>8</version>
-        <linkSequence>29</linkSequence>
-        <bendSequence>3</bendSequence>
-      </processLinkBendPK>
       <positionX>450</positionX>
-      <positionY>292</positionY>
+      <positionY>299</positionY>
     </ProcessLinkBend>
     <ProcessLinkBend>
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>30</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
-      <positionX>856</positionX>
-      <positionY>290</positionY>
+      <positionX>822</positionX>
+      <positionY>300</positionY>
     </ProcessLinkBend>
     <ProcessLinkBend>
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>30</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
-      <positionX>694</positionX>
-      <positionY>290</positionY>
+      <positionX>443</positionX>
+      <positionY>300</positionY>
     </ProcessLinkBend>
     <ProcessLinkBend>
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
-        <linkSequence>30</linkSequence>
-        <bendSequence>3</bendSequence>
-      </processLinkBendPK>
-      <positionX>450</positionX>
-      <positionY>290</positionY>
-    </ProcessLinkBend>
-    <ProcessLinkBend>
-      <processLinkBendPK>
-        <companyId>1</companyId>
-        <processId>Conciliacao_contabil</processId>
-        <version>8</version>
-        <linkSequence>34</linkSequence>
-        <bendSequence>1</bendSequence>
-      </processLinkBendPK>
-      <positionX>352</positionX>
-      <positionY>376</positionY>
-    </ProcessLinkBend>
-    <ProcessLinkBend>
-      <processLinkBendPK>
-        <companyId>1</companyId>
-        <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>43</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -3716,7 +4233,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>43</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -3727,7 +4244,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>44</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -3738,7 +4255,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>44</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -3749,7 +4266,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>46</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -3760,7 +4277,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>46</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -3771,7 +4288,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>47</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -3782,7 +4299,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>47</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -3793,51 +4310,51 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>48</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
-      <positionX>177</positionX>
-      <positionY>652</positionY>
+      <positionX>173</positionX>
+      <positionY>670</positionY>
     </ProcessLinkBend>
     <ProcessLinkBend>
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>48</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
       <positionX>469</positionX>
-      <positionY>652</positionY>
+      <positionY>670</positionY>
     </ProcessLinkBend>
     <ProcessLinkBend>
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>49</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
-      <positionX>330</positionX>
-      <positionY>657</positionY>
+      <positionX>325</positionX>
+      <positionY>673</positionY>
     </ProcessLinkBend>
     <ProcessLinkBend>
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>49</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
       <positionX>470</positionX>
-      <positionY>657</positionY>
+      <positionY>673</positionY>
     </ProcessLinkBend>
     <ProcessLinkBend>
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>51</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -3848,7 +4365,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>51</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -3859,7 +4376,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>52</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -3870,7 +4387,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>52</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -3881,51 +4398,29 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
-        <linkSequence>59</linkSequence>
-        <bendSequence>1</bendSequence>
-      </processLinkBendPK>
-      <positionX>820</positionX>
-      <positionY>773</positionY>
-    </ProcessLinkBend>
-    <ProcessLinkBend>
-      <processLinkBendPK>
-        <companyId>1</companyId>
-        <processId>Conciliacao_contabil</processId>
-        <version>8</version>
-        <linkSequence>59</linkSequence>
-        <bendSequence>2</bendSequence>
-      </processLinkBendPK>
-      <positionX>170</positionX>
-      <positionY>773</positionY>
-    </ProcessLinkBend>
-    <ProcessLinkBend>
-      <processLinkBendPK>
-        <companyId>1</companyId>
-        <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>69</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
-      <positionX>488</positionX>
+      <positionX>490</positionX>
       <positionY>976</positionY>
     </ProcessLinkBend>
     <ProcessLinkBend>
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>69</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
-      <positionX>97</positionX>
+      <positionX>231</positionX>
       <positionY>976</positionY>
     </ProcessLinkBend>
     <ProcessLinkBend>
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>70</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -3936,18 +4431,18 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>70</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
-      <positionX>232</positionX>
+      <positionX>347</positionX>
       <positionY>970</positionY>
     </ProcessLinkBend>
     <ProcessLinkBend>
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>71</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -3958,18 +4453,18 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
-        <linkSequence>71</linkSequence>
-        <bendSequence>2</bendSequence>
+        <version>17</version>
+        <linkSequence>72</linkSequence>
+        <bendSequence>1</bendSequence>
       </processLinkBendPK>
-      <positionX>375</positionX>
-      <positionY>969</positionY>
+      <positionX>487</positionX>
+      <positionY>972</positionY>
     </ProcessLinkBend>
     <ProcessLinkBend>
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>73</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -3980,7 +4475,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>73</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -3991,7 +4486,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>74</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -4002,7 +4497,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>74</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -4013,40 +4508,18 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
-        <linkSequence>75</linkSequence>
-        <bendSequence>1</bendSequence>
-      </processLinkBendPK>
-      <positionX>487</positionX>
-      <positionY>976</positionY>
-    </ProcessLinkBend>
-    <ProcessLinkBend>
-      <processLinkBendPK>
-        <companyId>1</companyId>
-        <processId>Conciliacao_contabil</processId>
-        <version>8</version>
-        <linkSequence>75</linkSequence>
-        <bendSequence>2</bendSequence>
-      </processLinkBendPK>
-      <positionX>932</positionX>
-      <positionY>976</positionY>
-    </ProcessLinkBend>
-    <ProcessLinkBend>
-      <processLinkBendPK>
-        <companyId>1</companyId>
-        <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>80</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
-      <positionX>96</positionX>
+      <positionX>222</positionX>
       <positionY>1101</positionY>
     </ProcessLinkBend>
     <ProcessLinkBend>
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>80</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -4057,18 +4530,18 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>81</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
-      <positionX>231</positionX>
+      <positionX>328</positionX>
       <positionY>1102</positionY>
     </ProcessLinkBend>
     <ProcessLinkBend>
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>81</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -4079,20 +4552,9 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>82</linkSequence>
         <bendSequence>1</bendSequence>
-      </processLinkBendPK>
-      <positionX>377</positionX>
-      <positionY>1101</positionY>
-    </ProcessLinkBend>
-    <ProcessLinkBend>
-      <processLinkBendPK>
-        <companyId>1</companyId>
-        <processId>Conciliacao_contabil</processId>
-        <version>8</version>
-        <linkSequence>82</linkSequence>
-        <bendSequence>2</bendSequence>
       </processLinkBendPK>
       <positionX>498</positionX>
       <positionY>1101</positionY>
@@ -4101,7 +4563,18 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
+        <linkSequence>83</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>502</positionX>
+      <positionY>1104</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>17</version>
         <linkSequence>84</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -4112,7 +4585,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>84</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -4123,18 +4596,18 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>85</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
-      <positionX>804</positionX>
+      <positionX>853</positionX>
       <positionY>1101</positionY>
     </ProcessLinkBend>
     <ProcessLinkBend>
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>85</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -4145,29 +4618,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
-        <linkSequence>86</linkSequence>
-        <bendSequence>1</bendSequence>
-      </processLinkBendPK>
-      <positionX>935</positionX>
-      <positionY>1098</positionY>
-    </ProcessLinkBend>
-    <ProcessLinkBend>
-      <processLinkBendPK>
-        <companyId>1</companyId>
-        <processId>Conciliacao_contabil</processId>
-        <version>8</version>
-        <linkSequence>86</linkSequence>
-        <bendSequence>2</bendSequence>
-      </processLinkBendPK>
-      <positionX>494</positionX>
-      <positionY>1098</positionY>
-    </ProcessLinkBend>
-    <ProcessLinkBend>
-      <processLinkBendPK>
-        <companyId>1</companyId>
-        <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>97</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -4178,7 +4629,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>97</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -4189,7 +4640,18 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
+        <linkSequence>103</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>103</positionX>
+      <positionY>1552</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>17</version>
         <linkSequence>109</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -4200,7 +4662,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>109</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -4211,7 +4673,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>116</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -4222,18 +4684,177 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>8</version>
+        <version>17</version>
         <linkSequence>116</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
       <positionX>706</positionX>
       <positionY>1243</positionY>
     </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>17</version>
+        <linkSequence>142</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>451</positionX>
+      <positionY>151</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>17</version>
+        <linkSequence>142</linkSequence>
+        <bendSequence>2</bendSequence>
+      </processLinkBendPK>
+      <positionX>947</positionX>
+      <positionY>151</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>17</version>
+        <linkSequence>143</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>942</positionX>
+      <positionY>300</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>17</version>
+        <linkSequence>143</linkSequence>
+        <bendSequence>2</bendSequence>
+      </processLinkBendPK>
+      <positionX>448</positionX>
+      <positionY>300</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>17</version>
+        <linkSequence>169</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>232</positionX>
+      <positionY>1341</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>17</version>
+        <linkSequence>170</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>105</positionX>
+      <positionY>1244</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>17</version>
+        <linkSequence>170</linkSequence>
+        <bendSequence>2</bendSequence>
+      </processLinkBendPK>
+      <positionX>709</positionX>
+      <positionY>1244</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>17</version>
+        <linkSequence>171</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>226</positionX>
+      <positionY>1351</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>17</version>
+        <linkSequence>173</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>911</positionX>
+      <positionY>493</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>17</version>
+        <linkSequence>174</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>903</positionX>
+      <positionY>821</positionY>
+    </ProcessLinkBend>
+  </list>
+  <list>
+    <ProcessStateTrigger>
+      <processStateTriggerPK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>17</version>
+        <stateSequence>149</stateSequence>
+        <triggerSequence>0</triggerSequence>
+      </processStateTriggerPK>
+      <runType>1</runType>
+      <type>3</type>
+      <value>Conciliacao_contabil.intermediateconditional149.js</value>
+      <timeTrigger>0:0:0</timeTrigger>
+      <frequencia>02</frequencia>
+    </ProcessStateTrigger>
   </list>
   <list/>
   <list/>
-  <list/>
-  <list/>
+  <list>
+    <ProcessStateService>
+      <companyId>1</companyId>
+      <processId>Conciliacao_contabil</processId>
+      <version>1</version>
+      <sequence>146</sequence>
+      <attempts>0</attempts>
+      <sucessFullMessage>Integração executada com sucesso</sucessFullMessage>
+      <serviceName></serviceName>
+      <frequency>1</frequency>
+      <frequencyType>0</frequencyType>
+    </ProcessStateService>
+    <ProcessStateService>
+      <companyId>1</companyId>
+      <processId>Conciliacao_contabil</processId>
+      <version>1</version>
+      <sequence>147</sequence>
+      <attempts>0</attempts>
+      <sucessFullMessage>Integração executada com sucesso</sucessFullMessage>
+      <serviceName></serviceName>
+      <frequency>1</frequency>
+      <frequencyType>0</frequencyType>
+    </ProcessStateService>
+    <ProcessStateService>
+      <companyId>1</companyId>
+      <processId>Conciliacao_contabil</processId>
+      <version>1</version>
+      <sequence>148</sequence>
+      <attempts>0</attempts>
+      <sucessFullMessage>Integração executada com sucesso</sucessFullMessage>
+      <serviceName></serviceName>
+      <frequency>1</frequency>
+      <frequencyType>0</frequencyType>
+    </ProcessStateService>
+  </list>
   <list/>
   <list/>
   <list/>
@@ -4242,7 +4863,7 @@
       <sequence>55</sequence>
       <expressionOrder>1</expressionOrder>
       <ruleOrder>1</ruleOrder>
-      <field>rd_contabilizacao_00</field>
+      <field>rd_13_apContabilizacao</field>
       <value>Sim</value>
       <operator>1</operator>
       <valueType>1</valueType>
@@ -4251,7 +4872,7 @@
       <sequence>55</sequence>
       <expressionOrder>2</expressionOrder>
       <ruleOrder>1</ruleOrder>
-      <field>rd_contabilizacao_00</field>
+      <field>rd_13_apContabilizacao</field>
       <value>Nao</value>
       <operator>1</operator>
       <valueType>1</valueType>
@@ -4260,7 +4881,7 @@
       <sequence>77</sequence>
       <expressionOrder>1</expressionOrder>
       <ruleOrder>1</ruleOrder>
-      <field>rd_conciliacao_01</field>
+      <field>rd_22_apValidarConciliacao</field>
       <value>Sim</value>
       <operator>1</operator>
       <valueType>1</valueType>
@@ -4269,7 +4890,7 @@
       <sequence>77</sequence>
       <expressionOrder>2</expressionOrder>
       <ruleOrder>1</ruleOrder>
-      <field>rd_conciliacao_01</field>
+      <field>rd_22_apValidarConciliacao</field>
       <value>Nao</value>
       <operator>1</operator>
       <valueType>1</valueType>
@@ -4278,7 +4899,7 @@
       <sequence>91</sequence>
       <expressionOrder>1</expressionOrder>
       <ruleOrder>1</ruleOrder>
-      <field>rd_efetivacao_02</field>
+      <field>rd_24_apReprocessamento</field>
       <value>Sim</value>
       <operator>1</operator>
       <valueType>1</valueType>
@@ -4287,7 +4908,25 @@
       <sequence>91</sequence>
       <expressionOrder>2</expressionOrder>
       <ruleOrder>1</ruleOrder>
-      <field>rd_efetivacao_02</field>
+      <field>rd_24_apReprocessamento</field>
+      <value>Nao</value>
+      <operator>1</operator>
+      <valueType>1</valueType>
+    </ConditionProcessAutomaticRules>
+    <ConditionProcessAutomaticRules>
+      <sequence>110</sequence>
+      <expressionOrder>1</expressionOrder>
+      <ruleOrder>1</ruleOrder>
+      <field>rd_23_efetivarConciliacao</field>
+      <value>Sim</value>
+      <operator>1</operator>
+      <valueType>1</valueType>
+    </ConditionProcessAutomaticRules>
+    <ConditionProcessAutomaticRules>
+      <sequence>110</sequence>
+      <expressionOrder>2</expressionOrder>
+      <ruleOrder>1</ruleOrder>
+      <field>rd_23_efetivarConciliacao</field>
       <value>Nao</value>
       <operator>1</operator>
       <valueType>1</valueType>

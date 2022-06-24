@@ -9,66 +9,95 @@
 	<script src="/resources/js/jquery/jquery-ui.min.js"></script>
 	<script src="/resources/js/mustache/mustache-min.js"></script>
 	<script src="/style-guide/js/fluig-style-guide.min.js"></script>
-
-	<!-- CUSTOM -->
 	<link href="/style-guide/css/fluig-style-guide-filter.min.css" rel="stylesheet" type="text/css">
 	<link href="/style-guide/css/fluig-style-guide-ratingstars.min.css" rel="stylesheet" type="text/css">
 	<script src="/style-guide/js/fluig-style-guide-filter.min.js"></script>
 	<script src="/style-guide/js/fluig-style-guide-ratingstars.min.js"></script>
+	<script type="text/javascript" src="/webdesk/vcXMLRPC.js" charset="utf-8"></script>
 
 	<link href='/webdesk/customresources?cid=1&resourceName=temaFormulario/0.css' type='text/css' rel='stylesheet' />
 
-	<!-- <meta charset="utf-8">
-	</meta>
-	<link href="./custom/fluig-style-guide-flat.min.css" type="text/css" rel="stylesheet" />
-	<script src="https://code.jquery.com/jquery-3.6.0.js"
-		integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-		integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-		integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-		crossorigin="anonymous"></script> -->
-
 	<link href="./custom/custom.css" type="text/css" rel="stylesheet" />
 	<script type="text/javascript" src="./custom/custom.js"></script>
+	<script type="text/javascript" src="./custom/activities.js"></script>
 </head>
 
 <body class="fluig-style-guide">
 
 	<form class="totvs-form grid vertical create-form-components ui-sortable t0" name="createFormComponents"
 		style="padding-left: 10px; padding-right: 10px;">
-		<h1 class="title-form-application">Protocolo GEAD</h1>
+		<h1 class="title-form-application">Conciliação Contábil</h1>
 		<div class="paragraph-is-required system-message-information alert alert-info" role="alert">
 			Todos os campos com * são de preenchimento obrigatório.
+		</div>
+
+		<div class="panel panel-info" id="div_000">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					<a class="collapse-icon up" data-toggle="collapse" data-parent="#div_000"
+						data-target="#inicio" href="#inicio">
+						<span class="flaticon flaticon-message icon-sm"></span>
+						Inicio
+					</a>
+				</h3>
+			</div>
+			<div id="inicio" class="panel-collapse collapse in">
+				<div class="panel-body">
+					<p>AQUI PODE FICAR UM TUTORIAL DE COMO INICIAR!
+						PARA INICIAR, CLIQUE EM ENVIAR.
+					</p>
+				</div>
+			</div>
 		</div>
 
 		<div class="panel panel-info" id="div_00">
 			<!-- trocar o ID -->
 			<div class="panel-heading">
 				<h3 class="panel-title">
-					<a class="collapse-icon up" data-toggle="collapse" data-parent="#div_00" data-target="#contabilizacao"
-						href="#contabilizacao">
+					<a class="collapse-icon" data-toggle="collapse" data-parent="#div_00"
+						data-target="#gerencias_dex" href="#gerencias_dex">
 						<span class="flaticon flaticon-message icon-sm"></span>
-						Contabilização
+						Gerencias do DEX
 					</a>
 				</h3>
 			</div>
-			<div id="contabilizacao" class="panel-collapse collapse in">
+			<div id="gerencias_dex" class="panel-collapse collapse">
 				<!-- trocar o ID -->
 				<div class="panel-body">
-					<div class="row form-input">
+					<div class="row">
 						<div class="col-sm-12">
-							<label>Aprovado?</label>
+							<p>Entregar todas as notas</p>
+						</div>
+					</div>
+					<div class="row form-group">
+						<div class="col-sm-3">
+							<label class='required'>Aprovado?</label>
 							<div class="radio-options">
 								<div class="radio">
-									<label><input type="radio" name="rd_contabilizacao_00" value="Sim">Sim</label>
+									<label><input type="radio" name="rd_00_contabilizar" value="Sim">Sim</label>
 								</div>
 								<div class="radio">
-									<label><input type="radio" name="rd_contabilizacao_00" value="Nao">Não</label>
+									<label><input type="radio" name="rd_00_contabilizar" value="Nao">Não</label>
 								</div>
 							</div>
+						</div>
+						<div class="col-sm-9">
+							<div class='form-group'>
+								<label class='required'>Justificativa</label>
+								<textarea class="form-control" rows="3" name="atxt_00_justificativa" placeholder=""
+									data-size="big"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="row  row-btn">
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Anexar Arquivo</button>
+						</div>
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Visualizar Arquivo</button>
+						</div>
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Baixar Arquivo</button>
 						</div>
 					</div>
 				</div>
@@ -79,28 +108,51 @@
 			<!-- trocar o ID -->
 			<div class="panel-heading">
 				<h3 class="panel-title">
-					<a class="collapse-icon up" data-toggle="collapse" data-parent="#div_01" data-target="#conciliacao"
-						href="#conciliacao">
+					<a class="collapse-icon" data-toggle="collapse" data-parent="#div_01" data-target="#gecont"
+						href="#gecont">
 						<!-- trocar o href,data-target, data-parent -->
 						<span class="flaticon flaticon-message icon-sm"></span>
-						Conciliação
+						GECONT
 					</a>
 				</h3>
 			</div>
-			<div id="conciliacao" class="panel-collapse collapse in">
+			<div id="gecont" class="panel-collapse collapse">
 				<!-- trocar o ID -->
 				<div class="panel-body">
-					<div class="row form-input">
+					<div class="row">
 						<div class="col-sm-12">
-							<label>Aprovado?</label>
+							<p>Lançar notas fiscais</p>
+						</div>
+					</div>
+					<div class="row form-input">
+						<div class="col-sm-3">
+							<label class='required'>Aprovado?</label>
 							<div class="radio-options">
 								<div class="radio">
-									<label><input type="radio" name="rd_conciliacao_01" value="Sim">Sim</label>
+									<label><input type="radio" name="rd_01_ApGecont" value="Sim">Sim</label>
 								</div>
 								<div class="radio">
-									<label><input type="radio" name="rd_conciliacao_01" value="Nao">Não</label>
+									<label><input type="radio" name="rd_01_ApGecont" value="Nao">Não</label>
 								</div>
 							</div>
+						</div>
+						<div class="col-sm-9">
+							<div class='form-group'>
+								<label class='required'>Justificativa</label>
+								<textarea class="form-control" rows="3" name="atxt_01_justificativa" placeholder=""
+									data-size="big"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="row  row-btn">
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Anexar Arquivo</button>
+						</div>
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Visualizar Arquivo</button>
+						</div>
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Baixar Arquivo</button>
 						</div>
 					</div>
 				</div>
@@ -111,27 +163,297 @@
 			<!-- trocar o ID -->
 			<div class="panel-heading">
 				<h3 class="panel-title">
-					<a class="collapse-icon up" data-toggle="collapse" data-parent="#div_02" data-target="#efetivacao"
+					<a class="collapse-icon" data-toggle="collapse" data-parent="#div_02" data-target="#gepes"
 						href="#efetivacao">
 						<!-- trocar o href,data-target, data-parent -->
 						<span class="flaticon flaticon-message icon-sm"></span>
-						Efetivação
+						GEPES
 					</a>
 				</h3>
 			</div>
-			<div id="efetivacao" class="panel-collapse collapse in">
+			<div id="gepes" class="panel-collapse collapse">
+				<!-- trocar o ID -->
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-sm-12">
+							<p>Fechar FOPAG </p>
+						</div>
+					</div>
+					<div class="row form-input">
+						<div class="col-sm-3">
+							<label class="required">Efetivado?</label>
+							<div class="radio-options">
+								<div class="radio">
+									<label><input type="radio" name="rd_02_ApGepes" value="Sim">Sim</label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="rd_02_ApGepes" value="Nao">Não</label>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-9">
+							<div class='form-group'>
+								<label class='required'>Justificativa</label>
+								<textarea class="form-control" rows="3" name="atxt_02_justificativa" placeholder=""
+									data-size="big"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="row  row-btn">
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Anexar Arquivo</button>
+						</div>
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Visualizar Arquivo</button>
+						</div>
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Baixar Arquivo</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-info" id="div_03">
+			<!-- trocar o ID -->
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					<a class="collapse-icon" data-toggle="collapse" data-parent="#div_03" data-target="#gefin"
+						href="#efetivacao">
+						<!-- trocar o href,data-target, data-parent -->
+						<span class="flaticon flaticon-message icon-sm"></span>
+						GEFIN
+					</a>
+				</h3>
+			</div>
+			<div id="efetivacao" class="panel-collapse collapse">
+				<!-- trocar o ID -->
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-sm-12">
+							<p>Validar a movimentação </p>
+						</div>
+					</div>
+					<div class="row form-input">
+						<div class="col-sm-3">
+							<label class="required">Efetivado?</label>
+							<div class="radio-options">
+								<div class="radio">
+									<label><input type="radio" name="rd_03_apGefin" value="Sim">Sim</label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="rd_03_apGefin" value="Nao">Não</label>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-9">
+							<div class='form-group'>
+								<label class="required">Justificativa</label>
+								<textarea class="form-control" rows="3" name="atxt_03_GefinJustificativa" placeholder=""
+									data-size="big"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="row  row-btn">
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Anexar Arquivo</button>
+						</div>
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Visualizar Arquivo</button>
+						</div>
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Baixar Arquivo</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel-info" id="div_04">
+			<!-- trocar o ID -->
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					<a class="collapse-icon" data-toggle="collapse" data-parent="#div_04" data-target="#geadAditivo"
+						href="#geadAditivo">
+						<!-- trocar o href,data-target, data-parent -->
+						<span class="flaticon flaticon-message icon-sm"></span>
+						GEAD Ativo
+					</a>
+				</h3>
+			</div>
+			<div id="geadAditivo" class="panel-collapse collapse">
+				<!-- trocar o ID -->
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-sm-12">
+							<p>Validar a movimentação do ativo fluxo </p>
+						</div>
+					</div>
+					<div class="row form-input">
+						<div class="col-sm-3">
+							<label class='required'>Efetivado?</label>
+							<div class="radio-options">
+								<div class="radio">
+									<label><input type="radio" name="rd_04_ApGead" value="Sim">Sim</label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="rd_04_ApGead" value="Nao">Não</label>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-9">
+							<div class='form-group'>
+								<label class='required'>Justificativa</label>
+								<textarea class="form-control" rows="3" name="atxt_04_GeadJustificativa" placeholder=""
+									data-size="big"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="row  row-btn">
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Anexar Arquivo</button>
+						</div>
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Visualizar Arquivo</button>
+						</div>
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Baixar Arquivo</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel-info" id="div_05">
+			<!-- trocar o ID -->
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					<a class="collapse-icon" data-toggle="collapse" data-parent="#div_05" data-target="#geadEstoque"
+						href="#geadEstoque">
+						<!-- trocar o href,data-target, data-parent -->
+						<span class="flaticon flaticon-message icon-sm"></span>
+						GEAD Estoque
+					</a>
+				</h3>
+			</div>
+			<div id="geadEstoque" class="panel-collapse collapse">
+				<!-- trocar o ID -->
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-sm-12">
+							<p>Validar a movimentação do estoque</p>
+						</div>
+					</div>
+					<div class="row form-input">
+						<div class="col-sm-3">
+							<label class='required'>Efetivado?</label>
+							<div class="radio-options">
+								<div class="radio">
+									<label><input type="radio" name="rd_05_apGead" value="Sim">Sim</label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="rd_05_apGead" value="Nao">Não</label>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-9">
+							<div class='form-group'>
+								<label class='required'>Justificativa</label>
+								<textarea class="form-control" rows="3" name="atxt_05_GeadJustificativa" placeholder=""
+									data-size="big"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="row  row-btn">
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Anexar Arquivo</button>
+						</div>
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Visualizar Arquivo</button>
+						</div>
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Baixar Arquivo</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel-info" id="div_06">
+			<!-- trocar o ID -->
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					<a class="collapse-icon" data-toggle="collapse" data-parent="#div_06" data-target="#assjur"
+						href="#assjur">
+						<!-- trocar o href,data-target, data-parent -->
+						<span class="flaticon flaticon-message icon-sm"></span>
+						ASSJUR
+					</a>
+				</h3>
+			</div>
+			<div id="assjur" class="panel-collapse collapse">
+				<!-- trocar o ID -->
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-sm-12">
+							<p>Validar e atualizar a contabilidade manualmente</p>
+						</div>
+					</div>
+					<div class="row form-input">
+						<div class="col-sm-3">
+							<label class='required'>Efetivado?</label>
+							<div class="radio-options">
+								<div class="radio">
+									<label><input type="radio" name="rd_06_apAssjur" value="Sim">Sim</label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="rd_06_apAssjur" value="Nao">Não</label>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-9">
+							<div class='form-group'>
+								<label class='required'>Justificativa</label>
+								<textarea class="form-control" rows="3" name="atxt_06_AssjurJustificativa"
+									placeholder="" data-size="big"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="row  row-btn">
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Anexar Arquivo</button>
+						</div>
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Visualizar Arquivo</button>
+						</div>
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Baixar Arquivo</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel-info" id="div_07">
+			<!-- trocar o ID -->
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					<a class="collapse-icon" data-toggle="collapse" data-parent="#div_07"
+						data-target="#contabilizacao" href="#contabilizacao">
+						<!-- trocar o href,data-target, data-parent -->
+						<span class="flaticon flaticon-message icon-sm"></span>
+						Gerar Contabilização
+					</a>
+				</h3>
+			</div>
+			<div id="contabilizacao" class="panel-collapse collapse">
 				<!-- trocar o ID -->
 				<div class="panel-body">
 					<div class="row form-input">
 						<div class="col-sm-12">
-							<label>Efetivado?</label>
-							<div class="radio-options">
-								<div class="radio">
-									<label><input type="radio" name="rd_efetivacao_02" value="Sim">Sim</label>
-								</div>
-								<div class="radio">
-									<label><input type="radio" name="rd_efetivacao_02" value="Nao">Não</label>
-								</div>
+							<div class='form-group'>
+								<label class='required'>Justificativa</label>
+								<textarea class="form-control" rows="3" name="atxt_07_justificativa" placeholder=""
+									data-size="big"></textarea>
 							</div>
 						</div>
 					</div>
@@ -139,6 +461,907 @@
 			</div>
 		</div>
 
+		<div class="panel panel-info" id="div_08">
+			<!-- trocar o ID -->
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					<a class="collapse-icon" data-toggle="collapse" data-parent="#div_08" data-target="#pessoal"
+						href="#pessoal">
+						<!-- trocar o href,data-target, data-parent -->
+						<span class="flaticon flaticon-message icon-sm"></span>
+						Pessoal
+					</a>
+				</h3>
+			</div>
+			<div id="pessoal" class="panel-collapse collapse">
+				<!-- trocar o ID -->
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-sm-12">
+							<p>Importar a movimentação</p>
+						</div>
+					</div>
+					<div class="row form-input">
+						<div class="col-sm-3">
+							<label class='required'>Contabilizado?</label>
+							<div class="radio-options">
+								<div class="radio">
+									<label><input type="radio" name="rd_08_apPessoal" value="Sim">Sim</label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="rd_08_apPessoal" value="Nao">Não</label>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-9">
+							<div class='form-group'>
+								<label class='required'>Justificativa</label>
+								<textarea class="form-control" rows="3" name="atxt_08_justificativa" placeholder=""
+									data-size="big"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="row  row-btn">
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Anexar Arquivo</button>
+						</div>
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Visualizar Arquivo</button>
+						</div>
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Baixar Arquivo</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel-info" id="div_09">
+			<!-- trocar o ID -->
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					<a class="collapse-icon" data-toggle="collapse" data-parent="#div_09" data-target="#financeiro"
+						href="#financeiro">
+						<!-- trocar o href,data-target, data-parent -->
+						<span class="flaticon flaticon-message icon-sm"></span>
+						Financeiro
+					</a>
+				</h3>
+			</div>
+			<div id="financeiro" class="panel-collapse collapse">
+				<!-- trocar o ID -->
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-sm-12">
+							<p>Importar o contas a pagar, contas a receber e todas</p>
+						</div>
+					</div>
+					<div class="row form-input">
+						<div class="col-sm-3">
+							<label class='required'>Contabilizado?</label>
+							<div class="radio-options">
+								<div class="radio">
+									<label><input type="radio" name="rd_09_apFinanceiro" value="Sim">Sim</label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="rd_09_apFinanceiro" value="Nao">Não</label>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-9">
+							<div class='form-group'>
+								<label class='required'>Justificativa</label>
+								<textarea class="form-control" rows="3" name="atxt_09_justificativa" placeholder=""
+									data-size="big"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="row  row-btn">
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Anexar Arquivo</button>
+						</div>
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Visualizar Arquivo</button>
+						</div>
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Baixar Arquivo</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel-info" id="div_10">
+			<!-- trocar o ID -->
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					<a class="collapse-icon" data-toggle="collapse" data-parent="#div_10" data-target="#compras"
+						href="#compras">
+						<!-- trocar o href,data-target, data-parent -->
+						<span class="flaticon flaticon-message icon-sm"></span>
+						Compras
+					</a>
+				</h3>
+			</div>
+			<div id="compras" class="panel-collapse collapse">
+				<!-- trocar o ID -->
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-sm-12">
+							<p>Importar documentos de entrada</p>
+						</div>
+					</div>
+					<div class="row form-input">
+						<div class="col-sm-3">
+							<label class='required'>Contabilizado?</label>
+							<div class="radio-options">
+								<div class="radio">
+									<label><input type="radio" name="rd_10_apCompras" value="Sim">Sim</label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="rd_10_apCompras" value="Nao">Não</label>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-9">
+							<div class='form-group'>
+								<label class='required'>Justificativa</label>
+								<textarea class="form-control" rows="3" name="atxt_10_justificativa" placeholder=""
+									data-size="big"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="row  row-btn">
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Anexar Arquivo</button>
+						</div>
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Visualizar Arquivo</button>
+						</div>
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Baixar Arquivo</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel-info" id="div_11">
+			<!-- trocar o ID -->
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					<a class="collapse-icon" data-toggle="collapse" data-parent="#div_11" data-target="#patrimonio"
+						href="#patrimonio">
+						<!-- trocar o href,data-target, data-parent -->
+						<span class="flaticon flaticon-message icon-sm"></span>
+						PATRIMONIO
+					</a>
+				</h3>
+			</div>
+			<div id="patrimonio" class="panel-collapse collapse">
+				<!-- trocar o ID -->
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-sm-12">
+							<p>Importar as aquisições, de preciação, outros movimentos e todos.</p>
+						</div>
+					</div>
+					<div class="row form-input">
+						<div class="col-sm-3">
+							<label class='required'>Contabilizado?</label>
+							<div class="radio-options">
+								<div class="radio">
+									<label><input type="radio" name="rd_11_apPatrimonio" value="Sim">Sim</label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="rd_11_apPatrimonio" value="Nao">Não</label>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-9">
+							<div class='form-group'>
+								<label class='required'>Justificativa</label>
+								<textarea class="form-control" rows="3" name="atxt_11_justificativa" placeholder=""
+									data-size="big"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="row  row-btn">
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Anexar Arquivo</button>
+						</div>
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Visualizar Arquivo</button>
+						</div>
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Baixar Arquivo</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel-info" id="div_12">
+			<!-- trocar o ID -->
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					<a class="collapse-icon" data-toggle="collapse" data-parent="#div_12" data-target="#estoque"
+						href="#estoque">
+						<!-- trocar o href,data-target, data-parent -->
+						<span class="flaticon flaticon-message icon-sm"></span>
+						ESTOQUE
+					</a>
+				</h3>
+			</div>
+			<div id="estoque" class="panel-collapse collapse">
+				<!-- trocar o ID -->
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-sm-12">
+							<p>Importar movimentação</p>
+						</div>
+					</div>
+					<div class="row form-input">
+						<div class="col-sm-3">
+							<label class='required'>Contabilizado?</label>
+							<div class="radio-options">
+								<div class="radio">
+									<label><input type="radio" name="rd_12_apEstoque" value="Sim">Sim</label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="rd_12_apEstoque" value="Nao">Não</label>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-9">
+							<div class='form-group'>
+								<label class='required'>Justificativa</label>
+								<textarea class="form-control" rows="3" name="atxt_12_justificativa" placeholder=""
+									data-size="big"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="row  row-btn">
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Anexar Arquivo</button>
+						</div>
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Visualizar Arquivo</button>
+						</div>
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Baixar Arquivo</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel-info" id="div_13">
+			<!-- trocar o ID -->
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					<a class="collapse-icon" data-toggle="collapse" data-parent="#div_13"
+						data-target="#aprovarContabilizacao" href="#aprovarContabilizacao">
+						<!-- trocar o href,data-target, data-parent -->
+						<span class="flaticon flaticon-message icon-sm"></span>
+						Contabilizar Registros
+					</a>
+				</h3>
+			</div>
+			<div id="aprovarContabilizacao" class="panel-collapse collapse">
+				<!-- trocar o ID -->
+				<div class="panel-body">
+					<div class="row form-input">
+						<div class="col-sm-3">
+							<label class='required'>Aprovado?</label>
+							<div class="radio-options">
+								<div class="radio">
+									<label><input type="radio" name="rd_13_apContabilizacao" value="Sim">Sim</label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="rd_13_apContabilizacao" value="Nao">Não</label>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-9">
+							<div class='form-group'>
+								<label class='required'>Justificativa</label>
+								<textarea class="form-control" rows="3" name="atxt_13_justificativa" placeholder=""
+									data-size="big"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="row  row-btn">
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Anexar Arquivo</button>
+						</div>
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Visualizar Arquivo</button>
+						</div>
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Baixar Arquivo</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel-info" id="div_14">
+			<!-- trocar o ID -->
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					<a class="collapse-icon" data-toggle="collapse" data-parent="#div_14"
+						data-target="#contabilizarNovamente" href="#contabilizarNovamente">
+						<!-- trocar o href,data-target, data-parent -->
+						<span class="flaticon flaticon-message icon-sm"></span>
+						Realizar contabilização novamente
+					</a>
+				</h3>
+			</div>
+			<div id="contabilizarNovamente" class="panel-collapse collapse">
+				<!-- trocar o ID -->
+				<div class="panel-body">
+					<div class="row form-group">
+						<div class="col-sm-12">
+								<label class='required'>Justificativa</label>
+								<textarea class="form-control" rows="3" name="atxt_14_justificativa" placeholder=""
+									data-size="big"></textarea>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel-info" id="div_15">
+			<!-- trocar o ID -->
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					<a class="collapse-icon" data-toggle="collapse" data-parent="#div_15" data-target="#conciliacao"
+						href="#conciliacao">
+						<!-- trocar o href,data-target, data-parent -->
+						<span class="flaticon flaticon-message icon-sm"></span>
+						Iniciar Conciliação
+					</a>
+				</h3>
+			</div>
+			<div id="conciliacao" class="panel-collapse collapse">
+				<!-- trocar o ID -->
+				<div class="panel-body">
+					<div class="row form-group">
+						<div class="col-sm-12">
+								<label class='required'>Justificativa</label>
+								<textarea class="form-control" rows="3" name="atxt_15_justificativa" placeholder=""
+									data-size="big"></textarea>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel-info" id="div_16">
+			<!-- trocar o ID -->
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					<a class="collapse-icon" data-toggle="collapse" data-parent="#div_16" data-target="#ativo"
+						href="#ativo">
+						<!-- trocar o href,data-target, data-parent -->
+						<span class="flaticon flaticon-message icon-sm"></span>
+						Ativo
+					</a>
+				</h3>
+			</div>
+			<div id="ativo" class="panel-collapse collapse">
+				<!-- trocar o ID -->
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-sm-12">
+							<p></p>
+						</div>
+					</div>
+					<div class="row form-input">
+						<div class="col-sm-3">
+							<label class='required'>Realizado?</label>
+							<div class="radio-options">
+								<div class="radio">
+									<label><input type="radio" name="rd_16_apAtivo" value="Sim">Sim</label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="rd_16_apAtivo" value="Nao">Não</label>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-9">
+							<div class='form-group'>
+								<label class='required'>Justificativa</label>
+								<textarea class="form-control" rows="3" name="atxt_16_justificativa" placeholder=""
+									data-size="big"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="row  row-btn">
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Anexar Arquivo</button>
+						</div>
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Visualizar Arquivo</button>
+						</div>
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Baixar Arquivo</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel-info" id="div_17">
+			<!-- trocar o ID -->
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					<a class="collapse-icon" data-toggle="collapse" data-parent="#div_17" data-target="#passivo"
+						href="#passivo">
+						<!-- trocar o href,data-target, data-parent -->
+						<span class="flaticon flaticon-message icon-sm"></span>
+						Passivo
+					</a>
+				</h3>
+			</div>
+			<div id="efetivacao" class="panel-collapse collapse">
+				<!-- trocar o ID -->
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-sm-12">
+							<p></p>
+						</div>
+					</div>
+					<div class="row form-input">
+						<div class="col-sm-3">
+							<label class='required'>Efetivado?</label>
+							<div class="radio-options">
+								<div class="radio">
+									<label><input type="radio" name="rd_17_apPassivo" value="Sim">Sim</label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="rd_17_apPassivo" value="Nao">Não</label>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-9">
+							<div class='form-group'>
+								<label class='required'>Justificativa</label>
+								<textarea class="form-control" rows="3" name="atxt_17_justificativa" placeholder=""
+									data-size="big"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="row  row-btn">
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Anexar Arquivo</button>
+						</div>
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Visualizar Arquivo</button>
+						</div>
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Baixar Arquivo</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel-info" id="div_18">
+			<!-- trocar o ID -->
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					<a class="collapse-icon" data-toggle="collapse" data-parent="#div_18"
+						data-target="#receitaOrcamentaria" href="#receitaOrcamentaria">
+						<!-- trocar o href,data-target, data-parent -->
+						<span class="flaticon flaticon-message icon-sm"></span>
+						Receita Orçamentária
+					</a>
+				</h3>
+			</div>
+			<div id="receitaOrcamentaria" class="panel-collapse collapse">
+				<!-- trocar o ID -->
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-sm-12">
+							<p></p>
+						</div>
+					</div>
+					<div class="row form-input">
+						<div class="col-sm-3">
+							<label class='required'>Efetivado?</label>
+							<div class="radio-options">
+								<div class="radio">
+									<label><input type="radio" name="rd_18_apReceitasOrcamentarias"
+											value="Sim">Sim</label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="rd_18_apReceitasOrcamentarias"
+											value="Nao">Não</label>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-9">
+							<div class='form-group'>
+								<label class='required'>Justificativa</label>
+								<textarea class="form-control" rows="3" name="atxt_18_justificativa" placeholder=""
+									data-size="big"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="row  row-btn">
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Anexar Arquivo</button>
+						</div>
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Visualizar Arquivo</button>
+						</div>
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Baixar Arquivo</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel-info" id="div_19">
+			<!-- trocar o ID -->
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					<a class="collapse-icon" data-toggle="collapse" data-parent="#div_19"
+						data-target="#despesaOrcamentaria" href="#despesaOrcamentaria">
+						<!-- trocar o href,data-target, data-parent -->
+						<span class="flaticon flaticon-message icon-sm"></span>
+						Efetivação
+					</a>
+				</h3>
+			</div>
+			<div id="despesaOrcamentaria" class="panel-collapse collapse">
+				<!-- trocar o ID -->
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-sm-12">
+							<p>Entregar todas as notas</p>
+						</div>
+					</div>
+					<div class="row form-input">
+						<div class="col-sm-3">
+							<label class='required'>Efetivado?</label>
+							<div class="radio-options">
+								<div class="radio">
+									<label><input type="radio" name="rd_19_apDespesaOrcamentaria"
+											value="Sim">Sim</label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="rd_19_apDespesaOrcamentaria"
+											value="Nao">Não</label>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-9">
+							<div class='form-group'>
+								<label class='required'>Justificativa</label>
+								<textarea class="form-control" rows="3" name="atxt_19_justificativa" placeholder=""
+									data-size="big"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="row  row-btn">
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Anexar Arquivo</button>
+						</div>
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Visualizar Arquivo</button>
+						</div>
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Baixar Arquivo</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="panel panel-info" id="div_20">
+			<!-- trocar o ID -->
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					<a class="collapse-icon" data-toggle="collapse" data-parent="#div_20" data-target="#receitaExtra"
+						href="#receitaExtra">
+						<!-- trocar o href,data-target, data-parent -->
+						<span class="flaticon flaticon-message icon-sm"></span>
+						Receita Extra Orçamentária
+					</a>
+				</h3>
+			</div>
+			<div id="receitaExtra" class="panel-collapse collapse">
+				<!-- trocar o ID -->
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-sm-12">
+							<p></p>
+						</div>
+					</div>
+					<div class="row form-input">
+						<div class="col-sm-3">
+							<label class='required'>Efetivado?</label>
+							<div class="radio-options">
+								<div class="radio">
+									<label><input type="radio" name="rd_20_apReceitaExtra" value="Sim">Sim</label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="rd_20_apReceitaExtra" value="Nao">Não</label>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-9">
+							<div class='form-group'>
+								<label class='required'>Justificativa</label>
+								<textarea class="form-control" rows="3" name="atxt_20_justificativa" placeholder=""
+									data-size="big"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="row  row-btn">
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Anexar Arquivo</button>
+						</div>
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Visualizar Arquivo</button>
+						</div>
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Baixar Arquivo</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="panel panel-info" id="div_21">
+			<!-- trocar o ID -->
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					<a class="collapse-icon" data-toggle="collapse" data-parent="#div_21" data-target="#despesaExtra"
+						href="#despesaExtra">
+						<!-- trocar o href,data-target, data-parent -->
+						<span class="flaticon flaticon-message icon-sm"></span>
+						Despesa Extra Orçamentária
+					</a>
+				</h3>
+			</div>
+			<div id="despesaExtra" class="panel-collapse collapse">
+				<!-- trocar o ID -->
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-sm-12">
+							<p></p>
+						</div>
+					</div>
+					<div class="row form-input">
+						<div class="col-sm-3">
+							<label class='required'>Efetivado?</label>
+							<div class="radio-options">
+								<div class="radio">
+									<label><input type="radio" name="rd_21_apDespesaExtra" value="Sim">Sim</label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="rd_21_apDespesaExtra" value="Nao">Não</label>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-9">
+							<div class='form-group'>
+								<label class='required'>Justificativa</label>
+								<textarea class="form-control" rows="3" name="atxt_21_justificativa" placeholder=""
+									data-size="big"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="row  row-btn">
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Anexar Arquivo</button>
+						</div>
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Visualizar Arquivo</button>
+						</div>
+						<div class="col-sm-4">
+							<button type="button" class="btn btn-info">Baixar Arquivo</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="panel panel-info" id="div_22">
+			<!-- trocar o ID -->
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					<a class="collapse-icon" data-toggle="collapse" data-parent="#div_22"
+						data-target="#validarConciliacao" href="#validarConciliacao">
+						<!-- trocar o href,data-target, data-parent -->
+						<span class="flaticon flaticon-message icon-sm"></span>
+						Validar Conciliação
+					</a>
+				</h3>
+			</div>
+			<div id="validarConciliacao" class="panel-collapse collapse">
+				<!-- trocar o ID -->
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-sm-12">
+							<p></p>
+						</div>
+					</div>
+					<div class="row form-input">
+						<div class="col-sm-3">
+							<label class='required'>Efetivado?</label>
+							<div class="radio-options">
+								<div class="radio">
+									<label><input type="radio" name="rd_22_apValidarConciliacao" value="Sim">Sim</label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="rd_22_apValidarConciliacao" value="Nao">Não</label>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-9">
+							<div class='form-group'>
+								<label class='required'>Justificativa</label>
+								<textarea class="form-control" rows="3" name="atxt_22_justificativa" placeholder=""
+									data-size="big"></textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="panel panel-info" id="div_23">
+			<!-- trocar o ID -->
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					<a class="collapse-icon" data-toggle="collapse" data-parent="#div_23"
+						data-target="#efetivarConciliacao" href="#efetivarConciliacao">
+						<!-- trocar o href,data-target, data-parent -->
+						<span class="flaticon flaticon-message icon-sm"></span>
+						Efetivar Conciliação
+					</a>
+				</h3>
+			</div>
+			<div id="efetivarConciliacao" class="panel-collapse collapse">
+				<!-- trocar o ID -->
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-sm-12">
+							<p></p>
+						</div>
+					</div>
+					<div class="row form-input">
+						<div class="col-sm-3">
+							<label class='required'>Efetivado?</label>
+							<div class="radio-options">
+								<div class="radio">
+									<label><input type="radio" name="rd_23_efetivarConciliacao" value="Sim">Sim</label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="rd_23_efetivarConciliacao" value="Nao">Não</label>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-9">
+							<div class='form-group'>
+								<label class='required'>Justificativa</label>
+								<textarea class="form-control" rows="3" name="atxt_23_justificativa" placeholder=""
+									data-size="big"></textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="panel panel-info" id="div_24">
+			<!-- trocar o ID -->
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					<a class="collapse-icon" data-toggle="collapse" data-parent="#div_24"
+						data-target="#reprocessamento" href="#reprocessamento">
+						<!-- trocar o href,data-target, data-parent -->
+						<span class="flaticon flaticon-message icon-sm"></span>
+						Aprovar Reprocessamento
+					</a>
+				</h3>
+			</div>
+			<div id="reprocessamento" class="panel-collapse collapse">
+				<!-- trocar o ID -->
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-sm-12">
+							<p></p>
+						</div>
+					</div>
+					<div class="row form-input">
+						<div class="col-sm-3">
+							<label class='required'>Efetivado?</label>
+							<div class="radio-options">
+								<div class="radio">
+									<label><input type="radio" name="rd_24_apReprocessamento" value="Sim">Sim</label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="rd_24_apReprocessamento" value="Nao">Não</label>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-9">
+							<div class='form-group'>
+								<label class='required'>Justificativa</label>
+								<textarea class="form-control" rows="3" name="atxt_24_justificativa" placeholder=""
+									data-size="big"></textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel-info" id="div_25">
+			<!-- trocar o ID -->
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					<a class="collapse-icon" data-toggle="collapse" data-parent="#div_25"
+						data-target="#validarSaldos" href="#validarSaldos">
+						<!-- trocar o href,data-target, data-parent -->
+						<span class="flaticon flaticon-message icon-sm"></span>
+						Validar Saldos
+					</a>
+				</h3>
+			</div>
+			<div id="validarSaldos" class="panel-collapse collapse">
+				<!-- trocar o ID -->
+				<div class="panel-body">
+					<div class="row form-group">
+						<div class="col-sm-12">
+							<label class='required'>Justificativa</label>
+							<textarea class="form-control" rows="3" name="atxt_25_justificativa" placeholder=""
+								data-size="big"></textarea>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="panel panel-info" id="div_26">
+			<!-- trocar o ID -->
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					<a class="collapse-icon" data-toggle="collapse" data-parent="#div_02"
+						data-target="#gerarBalancete" href="#gerarBalancete">
+						<!-- trocar o href,data-target, data-parent -->
+						<span class="flaticon flaticon-message icon-sm"></span>
+						Gerar Balancete
+					</a>
+				</h3>
+			</div>
+			<div id="gerarBalancete" class="panel-collapse collapse">
+				<!-- trocar o ID -->
+				<div class="panel-body">
+					<div class="row form-group">
+						<div class="col-sm-12">
+							<label class='required'>Justificativa</label>
+							<textarea class="form-control" rows="3" name="textarea3" placeholder=""
+								data-size="big"></textarea>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</form>
 </body>
 

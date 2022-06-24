@@ -18,3 +18,8 @@ form label.required:after{
     color: #FF0000;
     content: " *";
 }
+
+.row-btn{
+    padding-top: 10px;
+    text-align: center;
+}
