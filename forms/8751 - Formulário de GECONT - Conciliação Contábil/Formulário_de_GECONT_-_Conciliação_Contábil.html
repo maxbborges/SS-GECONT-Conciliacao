@@ -14,9 +14,11 @@
 	<script src="/style-guide/js/fluig-style-guide-filter.min.js"></script>
 	<script src="/style-guide/js/fluig-style-guide-ratingstars.min.js"></script>
 	<script type="text/javascript" src="/webdesk/vcXMLRPC.js" charset="utf-8"></script>
-
+	
 	<link href='/webdesk/customresources?cid=1&resourceName=temaFormulario/0.css' type='text/css' rel='stylesheet' />
 
+	<script type="text/javascript" src="./functionsCustom.js"></script>
+	<script type="text/javascript" src="./jspdf.min.js"></script>
 	<link href="./custom/custom.css" type="text/css" rel="stylesheet" />
 	<script type="text/javascript" src="./custom/custom.js"></script>
 	<script type="text/javascript" src="./custom/activities.js"></script>
@@ -43,8 +45,7 @@
 			</div>
 			<div id="inicio" class="panel-collapse collapse in">
 				<div class="panel-body">
-					<p>AQUI PODE FICAR UM TUTORIAL DE COMO INICIAR!
-						PARA INICIAR, CLIQUE EM ENVIAR.
+					<p>Inicie o processo clicando em Enviar.
 					</p>
 				</div>
 			</div>
@@ -861,7 +862,7 @@
 					</div>
 					<div class="row form-input">
 						<div class="col-sm-3">
-							<label class='required'>Realizado?</label>
+							<label class='required'>Conciliado?</label>
 							<div class="radio-options">
 								<div class="radio">
 									<label><input type="radio" name="rd_16_apAtivo" value="Sim">Sim</label>
@@ -916,7 +917,7 @@
 					</div>
 					<div class="row form-input">
 						<div class="col-sm-3">
-							<label class='required'>Efetivado?</label>
+							<label class='required'>Conciliado?</label>
 							<div class="radio-options">
 								<div class="radio">
 									<label><input type="radio" name="rd_17_apPassivo" value="Sim">Sim</label>
@@ -971,7 +972,7 @@
 					</div>
 					<div class="row form-input">
 						<div class="col-sm-3">
-							<label class='required'>Efetivado?</label>
+							<label class='required'>Conciliado?</label>
 							<div class="radio-options">
 								<div class="radio">
 									<label><input type="radio" name="rd_18_apReceitasOrcamentarias"
@@ -1028,7 +1029,7 @@
 					</div>
 					<div class="row form-input">
 						<div class="col-sm-3">
-							<label class='required'>Efetivado?</label>
+							<label class='required'>Conciliado?</label>
 							<div class="radio-options">
 								<div class="radio">
 									<label><input type="radio" name="rd_19_apDespesaOrcamentaria"
@@ -1086,7 +1087,7 @@
 					</div>
 					<div class="row form-input">
 						<div class="col-sm-3">
-							<label class='required'>Efetivado?</label>
+							<label class='required'>Conciliado?</label>
 							<div class="radio-options">
 								<div class="radio">
 									<label><input type="radio" name="rd_20_apReceitaExtra" value="Sim">Sim</label>
@@ -1142,7 +1143,7 @@
 					</div>
 					<div class="row form-input">
 						<div class="col-sm-3">
-							<label class='required'>Efetivado?</label>
+							<label class='required'>Conciliado?</label>
 							<div class="radio-options">
 								<div class="radio">
 									<label><input type="radio" name="rd_21_apDespesaExtra" value="Sim">Sim</label>
@@ -1359,15 +1360,111 @@
 								data-size="big"></textarea>
 						</div>
 					</div>
+					<div class="row form-group">
+						<div class="col-sm-12 div_btn">
+							<button type="button" class="btn btn-info" id="btn_anexaArquivo">Anexar Ofício</button>
+							<input type="hidden" class="form-control" name="txt_26_nomeDocumento" id="txt_26_nomeDocumento">
+						</div>
+					</div>
 				</div>
 			</div>
-			<!-- <button type="button" class="btn btn-info" id="btn_criaPDF" onclick="verificaPDF()">Gerar PDF</button> -->
-			<button type="button" class="btn btn-info" id="btn_enviaAssinatura" onclick="assinatura()">Enviar Para Assinatura</button>
-			<input type="text" class="form-control" name="txt_26_nomeDocumento" id="txt_26_nomeDocumento">
-			<input type="text" class="form-control" name="txt_26_idDocumento" id="txt_26_idDocumento">
-			<input type="text" class="form-control" name="txt_26_nrPasta" id="txt_26_nrPasta">
-			<input type="text" class="form-control" name="txt_26_nrSolicitacao" id="txt_26_nrSolicitacao">
-			<input type="text" class="form-control" name="txt_26_validaEncaminhamento" id="txt_26_validaEncaminhamento">
+			
+		</div>
+
+		<div class="panel panel-info" id="div_27">
+			<!-- trocar o ID -->
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					<a class="collapse-icon" data-toggle="collapse" data-parent="#div_27"
+						data-target="#apGerencia" href="#apGerencia">
+						<!-- trocar o href,data-target, data-parent -->
+						<span class="flaticon flaticon-message icon-sm"></span>
+						Aprovação Gerencia
+					</a>
+				</h3>
+			</div>
+			<div id="apGerencia" class="panel-collapse collapse">
+				<!-- trocar o ID -->
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-sm-12">
+							<p></p>
+						</div>
+					</div>
+					<div class="row form-input">
+						<div class="col-sm-3">
+							<label class='required'>Aprovado?</label>
+							<div class="radio-options">
+								<div class="radio">
+									<label><input type="radio" name="rd_27_apGerencia" value="Sim">Sim</label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="rd_27_apGerencia" value="Nao">Não</label>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-9">
+							<div class='form-group'>
+								<label class='required'>Justificativa</label>
+								<textarea class="form-control" rows="3" name="atxt_27_justificativa"></textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel-info" id="div_28">
+			<!-- trocar o ID -->
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					<a class="collapse-icon" data-toggle="collapse" data-parent="#div_28"
+						data-target="#apDiretoria" href="#apDiretoria">
+						<!-- trocar o href,data-target, data-parent -->
+						<span class="flaticon flaticon-message icon-sm"></span>
+						Aprovação Diretoria
+					</a>
+				</h3>
+			</div>
+			<div id="apDiretoria" class="panel-collapse collapse">
+				<!-- trocar o ID -->
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-sm-12">
+							<p></p>
+						</div>
+					</div>
+					<div class="row form-input">
+						<div class="col-sm-3">
+							<label class='required'>Aprovado?</label>
+							<div class="radio-options">
+								<div class="radio">
+									<label><input type="radio" name="rd_28_apDiretoria" value="Sim">Sim</label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="rd_28_apDiretoria" value="Nao">Não</label>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-9">
+							<div class='form-group'>
+								<label class='required'>Justificativa</label>
+								<textarea class="form-control" rows="3" name="atxt_28_justificativa"></textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 div_btn">
+						<button type="button" class="btn btn-info" id="btn_enviaAssinatura">Enviar Ofício Para Assinatura</button>
+						<input type="hidden" class="form-control" name="txt_26_idDocumento" id="txt_26_idDocumento">
+						<input type="hidden" class="form-control" name="txt_26_nrPasta" id="txt_26_nrPasta" value="10839">
+						<input type="hidden" class="form-control" name="txt_26_nrSolicitacao" id="txt_26_nrSolicitacao">
+						<input type="hidden" class="form-control" name="txt_26_validaEncaminhamento" id="txt_26_validaEncaminhamento">
+					</div>
+				</div>
+				
+			</div>
 		</div>
 	</form>
 </body>

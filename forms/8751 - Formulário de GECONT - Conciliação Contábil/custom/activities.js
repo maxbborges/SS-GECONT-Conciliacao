@@ -29,6 +29,8 @@ var ACTIVITY = {
     REPROCESSAMENTO:168,
     VALIDAR_SALDOS:98,
     GERAR_BALANCETE:99,
+    APROVAR_GERENCIA:177,
+    APROVAR_DIRETORIA:181
 }
 
 var DIVS =[
@@ -60,4 +62,6 @@ var DIVS =[
     "div_24",//25
     "div_25",//26
     "div_26",//27
+    "div_27",//28
+    "div_28",//29
 ]

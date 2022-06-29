@@ -3,8 +3,9 @@ function displayFields(form, customHTML) {
     // customHTML.append("<script> var USUARIO ="+ getValue("WKUser") + "; </script>");
 	// customHTML.append("<script>function getUser(){ return '"+ getValue("WKUser") + "'; }</script>");
 	customHTML.append("<script> var FORM_MODE = '" + form.getFormMode() + "';</script>");
+    customHTML.append("<script> var nProcesso = '" + getValue("WKNumProces") + "';</script>");
 	
-	// var process = getValue("WKNumProces");
+	var process = getValue("WKNumProces");
 	// var usuario = getValue('WKUser');
 	var activity = getValue('WKNumState');
 	var data = new Date();
@@ -12,6 +13,9 @@ function displayFields(form, customHTML) {
     if (mes<=9){
         mes = '0'+mes;
     }
+    form.setValue('txt_26_nrSolicitacao',process);
+
+    
     
 
 

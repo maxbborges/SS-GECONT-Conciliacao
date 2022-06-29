@@ -23,3 +23,14 @@ form label.required:after{
     padding-top: 10px;
     text-align: center;
 }
+
+.div_btn{
+    text-align: center;
+}
+
+.has-error{
+	color: red!important;
+}
+.has-success{
+	color: green!important;
+}
