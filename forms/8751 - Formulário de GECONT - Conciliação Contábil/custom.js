@@ -134,16 +134,28 @@ function hideDivs(){
         hideBlockDivs(26)
     }
 
-    if (ATIVIDADE==ACTIVITY.GERAR_BALANCETE){
+    if (ATIVIDADE==ACTIVITY.FECHAR_DESPACHO){
         hideBlockDivs(27)
     }
 
-    if (ATIVIDADE==ACTIVITY.APROVAR_GERENCIA){
+    if (ATIVIDADE==ACTIVITY.FECHAR_CALENDARIO){
         hideBlockDivs(28)
     }
 
-    if (ATIVIDADE==ACTIVITY.APROVAR_DIRETORIA){
+    if (ATIVIDADE==ACTIVITY.GERAR_BALANCETE){
         hideBlockDivs(29)
+    }
+
+    if (ATIVIDADE==ACTIVITY.VALIDAR_PAINEIS){
+        hideBlockDivs(30)
+    }
+
+    if (ATIVIDADE==ACTIVITY.APROVAR_GERENCIA){
+        hideBlockDivs(31)
+    }
+
+    if (ATIVIDADE==ACTIVITY.APROVAR_DIRETORIA){
+        hideBlockDivs(32)
     }
 }
 
@@ -254,17 +266,29 @@ var beforeSendValidate = function (numState, nextState) {
         validaCamposRequired(DIVS[26])
     }
 
-    if (ATIVIDADE==ACTIVITY.GERAR_BALANCETE){
+    if (ATIVIDADE==ACTIVITY.FECHAR_DESPACHO){
         validaCamposRequired(DIVS[27])
-        validaVertsign("#txt_26_nomeDocumento")
     }
 
-    if (ATIVIDADE==ACTIVITY.APROVAR_GERENCIA){
+    if (ATIVIDADE==ACTIVITY.FECHAR_CALENDARIO){
         validaCamposRequired(DIVS[28])
     }
 
-    if (ATIVIDADE==ACTIVITY.APROVAR_DIRETORIA){
+    if (ATIVIDADE==ACTIVITY.GERAR_BALANCETE){
         validaCamposRequired(DIVS[29])
+        validaVertsign("#txt_26_nomeDocumento")
+    }
+
+    if (ATIVIDADE==ACTIVITY.VALIDAR_PAINEIS){
+        validaCamposRequired(DIVS[30])
+    }
+
+    if (ATIVIDADE==ACTIVITY.APROVAR_GERENCIA){
+        validaCamposRequired(DIVS[31])
+    }
+
+    if (ATIVIDADE==ACTIVITY.APROVAR_DIRETORIA){
+        validaCamposRequired(DIVS[32])
         validaVertsign("#txt_26_validaEncaminhamento")
     }
 }

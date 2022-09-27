@@ -28,7 +28,7 @@
     <processDefinitionVersionPK>
       <companyId>1</companyId>
       <processId>GECONT - Conciliação Contábil</processId>
-      <version>11</version>
+      <version>12</version>
     </processDefinitionVersionPK>
     <versionDescription></versionDescription>
     <formId>8751</formId>
@@ -1167,7 +1167,7 @@
       <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
       <automatic>false</automatic>
       <positionX>50</positionX>
-      <positionY>1599</positionY>
+      <positionY>1598</positionY>
       <forecastedEffortType>0</forecastedEffortType>
       <forecastedEffort>0</forecastedEffort>
       <notifyManagerFollowUp>false</notifyManagerFollowUp>
@@ -1218,8 +1218,8 @@
       <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
       <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
       <automatic>false</automatic>
-      <positionX>200</positionX>
-      <positionY>1590</positionY>
+      <positionX>220</positionX>
+      <positionY>1790</positionY>
       <forecastedEffortType>0</forecastedEffortType>
       <forecastedEffort>0</forecastedEffort>
       <notifyManagerFollowUp>false</notifyManagerFollowUp>
@@ -1372,8 +1372,8 @@
       <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
       <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
       <automatic>false</automatic>
-      <positionX>750</positionX>
-      <positionY>1540</positionY>
+      <positionX>890</positionX>
+      <positionY>1640</positionY>
       <forecastedEffortType>0</forecastedEffortType>
       <forecastedEffort>0</forecastedEffort>
       <notifyManagerFollowUp>false</notifyManagerFollowUp>
@@ -1424,8 +1424,8 @@
       <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
       <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
       <automatic>false</automatic>
-      <positionX>750</positionX>
-      <positionY>1670</positionY>
+      <positionX>890</positionX>
+      <positionY>1760</positionY>
       <forecastedEffortType>0</forecastedEffortType>
       <forecastedEffort>0</forecastedEffort>
       <notifyManagerFollowUp>false</notifyManagerFollowUp>
@@ -1528,8 +1528,8 @@
       <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
       <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
       <automatic>false</automatic>
-      <positionX>350</positionX>
-      <positionY>1598</positionY>
+      <positionX>400</positionX>
+      <positionY>1660</positionY>
       <forecastedEffortType>0</forecastedEffortType>
       <forecastedEffort>0</forecastedEffort>
       <notifyManagerFollowUp>false</notifyManagerFollowUp>
@@ -1580,8 +1580,158 @@
       <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
       <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
       <automatic>false</automatic>
-      <positionX>490</positionX>
-      <positionY>1598</positionY>
+      <positionX>650</positionX>
+      <positionY>1540</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>1</version>
+        <sequence>184</sequence>
+      </processStatePK>
+      <stateName>Fechar Despacho</stateName>
+      <stateDescription>Fechar Despacho</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>50</positionX>
+      <positionY>1700</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>1</version>
+        <sequence>186</sequence>
+      </processStatePK>
+      <stateName>GESIS fechar calendário contábil</stateName>
+      <stateDescription>GESIS fechar calendário contábil</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>50</positionX>
+      <positionY>1790</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>1</version>
+        <sequence>189</sequence>
+      </processStatePK>
+      <stateName>Elaborar demostrações contábeis  e validar paneis</stateName>
+      <stateDescription>Elaborar demostrações contábeis  e validar paneis</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>160</positionX>
+      <positionY>1540</positionY>
       <forecastedEffortType>0</forecastedEffortType>
       <forecastedEffort>0</forecastedEffort>
       <notifyManagerFollowUp>false</notifyManagerFollowUp>
@@ -1631,8 +1781,8 @@
       <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
       <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
       <automatic>false</automatic>
-      <positionX>660</positionX>
-      <positionY>1610</positionY>
+      <positionX>810</positionX>
+      <positionY>1669</positionY>
       <forecastedEffortType>0</forecastedEffortType>
       <forecastedEffort>0</forecastedEffort>
       <notifyManagerFollowUp>false</notifyManagerFollowUp>
@@ -1678,8 +1828,8 @@
       <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
       <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
       <automatic>false</automatic>
-      <positionX>826</positionX>
-      <positionY>1610</positionY>
+      <positionX>966</positionX>
+      <positionY>1710</positionY>
       <forecastedEffortType>0</forecastedEffortType>
       <forecastedEffort>0</forecastedEffort>
       <notifyManagerFollowUp>false</notifyManagerFollowUp>
@@ -1951,6 +2101,81 @@
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
         <version>1</version>
+        <sequence>191</sequence>
+      </processStatePK>
+      <stateName>Aprov?</stateName>
+      <stateDescription>Aprov?</stateDescription>
+      <joint>false</joint>
+      <initialState>false</initialState>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <automatic>true</automatic>
+      <positionX>290</positionX>
+      <positionY>1657</positionY>
+      <inhibitTransfer>false</inhibitTransfer>
+      <stateType>1</stateType>
+      <bpmnType>120</bpmnType>
+      <signalId>0</signalId>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>1</version>
+        <sequence>195</sequence>
+      </processStatePK>
+      <stateName>Aprov?</stateName>
+      <stateDescription>Aprov?</stateDescription>
+      <joint>false</joint>
+      <initialState>false</initialState>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <automatic>true</automatic>
+      <positionX>540</positionX>
+      <positionY>1540</positionY>
+      <inhibitTransfer>false</inhibitTransfer>
+      <stateType>1</stateType>
+      <bpmnType>120</bpmnType>
+      <signalId>0</signalId>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>1</version>
+        <sequence>199</sequence>
+      </processStatePK>
+      <stateName>Aprov?</stateName>
+      <stateDescription>Aprov?</stateDescription>
+      <joint>false</joint>
+      <initialState>false</initialState>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <automatic>true</automatic>
+      <positionX>670</positionX>
+      <positionY>1640</positionY>
+      <inhibitTransfer>false</inhibitTransfer>
+      <stateType>1</stateType>
+      <bpmnType>120</bpmnType>
+      <signalId>0</signalId>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>1</version>
         <sequence>100</sequence>
       </processStatePK>
       <stateName>Fim</stateName>
@@ -1975,8 +2200,8 @@
       <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
       <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
       <automatic>false</automatic>
-      <positionX>920</positionX>
-      <positionY>1620</positionY>
+      <positionX>950</positionX>
+      <positionY>1560</positionY>
       <forecastedEffortType>0</forecastedEffortType>
       <forecastedEffort>0</forecastedEffort>
       <notifyManagerFollowUp>false</notifyManagerFollowUp>
@@ -2000,7 +2225,7 @@
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
         <expressionOrder>1</expressionOrder>
-        <version>11</version>
+        <version>12</version>
         <sequence>55</sequence>
       </conditionProcessStatePK>
       <condition></condition>
@@ -2012,7 +2237,7 @@
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
         <expressionOrder>2</expressionOrder>
-        <version>11</version>
+        <version>12</version>
         <sequence>55</sequence>
       </conditionProcessStatePK>
       <condition></condition>
@@ -2024,7 +2249,7 @@
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
         <expressionOrder>1</expressionOrder>
-        <version>11</version>
+        <version>12</version>
         <sequence>77</sequence>
       </conditionProcessStatePK>
       <condition></condition>
@@ -2036,7 +2261,7 @@
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
         <expressionOrder>2</expressionOrder>
-        <version>11</version>
+        <version>12</version>
         <sequence>77</sequence>
       </conditionProcessStatePK>
       <condition></condition>
@@ -2048,7 +2273,7 @@
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
         <expressionOrder>1</expressionOrder>
-        <version>11</version>
+        <version>12</version>
         <sequence>91</sequence>
       </conditionProcessStatePK>
       <condition></condition>
@@ -2060,7 +2285,7 @@
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
         <expressionOrder>2</expressionOrder>
-        <version>11</version>
+        <version>12</version>
         <sequence>91</sequence>
       </conditionProcessStatePK>
       <condition></condition>
@@ -2072,7 +2297,7 @@
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
         <expressionOrder>1</expressionOrder>
-        <version>11</version>
+        <version>12</version>
         <sequence>110</sequence>
       </conditionProcessStatePK>
       <condition></condition>
@@ -2084,11 +2309,83 @@
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
         <expressionOrder>2</expressionOrder>
-        <version>11</version>
+        <version>12</version>
         <sequence>110</sequence>
       </conditionProcessStatePK>
       <condition></condition>
       <destinationSequenceId>76</destinationSequenceId>
+      <conditionType>1</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <expressionOrder>1</expressionOrder>
+        <version>12</version>
+        <sequence>191</sequence>
+      </conditionProcessStatePK>
+      <condition></condition>
+      <destinationSequenceId>177</destinationSequenceId>
+      <conditionType>1</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <expressionOrder>2</expressionOrder>
+        <version>12</version>
+        <sequence>191</sequence>
+      </conditionProcessStatePK>
+      <condition></condition>
+      <destinationSequenceId>99</destinationSequenceId>
+      <conditionType>1</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <expressionOrder>1</expressionOrder>
+        <version>12</version>
+        <sequence>195</sequence>
+      </conditionProcessStatePK>
+      <condition></condition>
+      <destinationSequenceId>189</destinationSequenceId>
+      <conditionType>1</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <expressionOrder>2</expressionOrder>
+        <version>12</version>
+        <sequence>195</sequence>
+      </conditionProcessStatePK>
+      <condition></condition>
+      <destinationSequenceId>189</destinationSequenceId>
+      <conditionType>1</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <expressionOrder>1</expressionOrder>
+        <version>12</version>
+        <sequence>199</sequence>
+      </conditionProcessStatePK>
+      <condition></condition>
+      <destinationSequenceId>149</destinationSequenceId>
+      <conditionType>1</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <expressionOrder>2</expressionOrder>
+        <version>12</version>
+        <sequence>199</sequence>
+      </conditionProcessStatePK>
+      <condition></condition>
+      <destinationSequenceId>177</destinationSequenceId>
       <conditionType>1</conditionType>
     </ConditionProcessState>
   </list>
@@ -2898,26 +3195,6 @@
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
         <version>1</version>
-        <linkSequence>102</linkSequence>
-      </processLinkPK>
-      <actionLabel></actionLabel>
-      <returnPermited>false</returnPermited>
-      <initialStateSequence>98</initialStateSequence>
-      <finalStateSequence>99</finalStateSequence>
-      <returnLabel></returnLabel>
-      <name></name>
-      <automaticLink>false</automaticLink>
-      <defaultLink>false</defaultLink>
-      <type>0</type>
-      <movementTitle></movementTitle>
-      <movementDescription></movementDescription>
-      <movementAccessLinkDescription></movementAccessLinkDescription>
-    </ProcessLink>
-    <ProcessLink>
-      <processLinkPK>
-        <companyId>1</companyId>
-        <processId>Conciliacao_contabil</processId>
-        <version>1</version>
         <linkSequence>103</linkSequence>
       </processLinkPK>
       <actionLabel></actionLabel>
@@ -3210,12 +3487,63 @@
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
         <version>1</version>
-        <linkSequence>178</linkSequence>
+        <linkSequence>185</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>98</initialStateSequence>
+      <finalStateSequence>184</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>1</version>
+        <linkSequence>187</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>184</initialStateSequence>
+      <finalStateSequence>186</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>1</version>
+        <linkSequence>188</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>186</initialStateSequence>
+      <finalStateSequence>99</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>1</version>
+        <linkSequence>190</linkSequence>
       </processLinkPK>
       <actionLabel></actionLabel>
       <returnPermited>false</returnPermited>
       <initialStateSequence>99</initialStateSequence>
-      <finalStateSequence>177</finalStateSequence>
+      <finalStateSequence>189</finalStateSequence>
       <returnLabel></returnLabel>
       <name></name>
       <automaticLink>false</automaticLink>
@@ -3227,12 +3555,63 @@
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
         <version>1</version>
-        <linkSequence>182</linkSequence>
+        <linkSequence>192</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>189</initialStateSequence>
+      <finalStateSequence>191</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>1</version>
+        <linkSequence>193</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>191</initialStateSequence>
+      <finalStateSequence>177</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>Sim</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>1</version>
+        <linkSequence>194</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>191</initialStateSequence>
+      <finalStateSequence>99</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>Não</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>1</version>
+        <linkSequence>196</linkSequence>
       </processLinkPK>
       <actionLabel></actionLabel>
       <returnPermited>false</returnPermited>
       <initialStateSequence>177</initialStateSequence>
-      <finalStateSequence>181</finalStateSequence>
+      <finalStateSequence>195</finalStateSequence>
       <returnLabel></returnLabel>
       <name></name>
       <automaticLink>false</automaticLink>
@@ -3244,14 +3623,82 @@
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
         <version>1</version>
-        <linkSequence>183</linkSequence>
+        <linkSequence>197</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>195</initialStateSequence>
+      <finalStateSequence>189</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>Não</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>1</version>
+        <linkSequence>198</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>195</initialStateSequence>
+      <finalStateSequence>181</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>Sim</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>1</version>
+        <linkSequence>200</linkSequence>
       </processLinkPK>
       <actionLabel></actionLabel>
       <returnPermited>false</returnPermited>
       <initialStateSequence>181</initialStateSequence>
-      <finalStateSequence>149</finalStateSequence>
+      <finalStateSequence>199</finalStateSequence>
       <returnLabel></returnLabel>
       <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>1</version>
+        <linkSequence>201</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>199</initialStateSequence>
+      <finalStateSequence>149</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>Sim</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>Conciliacao_contabil</processId>
+        <version>1</version>
+        <linkSequence>202</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>199</initialStateSequence>
+      <finalStateSequence>177</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>Não</name>
       <automaticLink>false</automaticLink>
       <defaultLink>false</defaultLink>
       <type>0</type>
@@ -3266,31 +3713,31 @@
         <processId>Conciliacao_contabil</processId>
         <version>1</version>
       </workflowProcessEventPK>
-      <eventDescription>function intermediateconditional149() {
-	var solicitacao = getValue(&quot;WKNumProces&quot;);
-	var finalizado  = false;
-	
-	log.info(&quot;&gt;&gt;&gt; Vertsign - BPM - Verificando status do documento&quot;);	
-	log.info(&quot;&gt;&gt;&gt; Solicitacao: &quot; + solicitacao);
-	
-	var c1 = DatasetFactory.createConstraint(&apos;numSolic&apos;, solicitacao, solicitacao, ConstraintType.MUST);
-	var form_aux = DatasetFactory.getDataset(&apos;ds_form_aux_vertsign&apos;, null, [c1], null);
-	
-	if (form_aux &amp;&amp; form_aux.rowsCount &gt; 0) {		
-		var posicao = form_aux.rowsCount - 1
-		log.info(&quot;&gt;&gt;&gt; Status do Documento &quot;+posicao+&quot;: &quot; + form_aux.getValue(posicao, &quot;statusAssinatura&quot;));
-		
-		if (form_aux.getValue(posicao, &quot;statusAssinatura&quot;) == &quot;Assinado&quot;  ||
-			form_aux.getValue(posicao, &quot;statusAssinatura&quot;) == &quot;Rejeitado&quot; ||
-			form_aux.getValue(posicao, &quot;statusAssinatura&quot;) == &quot;Cancelado&quot;){
-			finalizado = true;
-		}
-	} else {
-		log.info(&quot;&gt;&gt;&gt; Não localizado Formulário Auxiliar, irá finalizar com erros&quot;);
-		finalizado = true;
-	}
-	
-	return finalizado;
+      <eventDescription>function intermediateconditional149() {&#xd;
+	var solicitacao = getValue(&quot;WKNumProces&quot;);&#xd;
+	var finalizado  = false;&#xd;
+	&#xd;
+	log.info(&quot;&gt;&gt;&gt; Vertsign - BPM - Verificando status do documento&quot;);	&#xd;
+	log.info(&quot;&gt;&gt;&gt; Solicitacao: &quot; + solicitacao);&#xd;
+	&#xd;
+	var c1 = DatasetFactory.createConstraint(&apos;numSolic&apos;, solicitacao, solicitacao, ConstraintType.MUST);&#xd;
+	var form_aux = DatasetFactory.getDataset(&apos;ds_form_aux_vertsign&apos;, null, [c1], null);&#xd;
+	&#xd;
+	if (form_aux &amp;&amp; form_aux.rowsCount &gt; 0) {		&#xd;
+		var posicao = form_aux.rowsCount - 1&#xd;
+		log.info(&quot;&gt;&gt;&gt; Status do Documento &quot;+posicao+&quot;: &quot; + form_aux.getValue(posicao, &quot;statusAssinatura&quot;));&#xd;
+		&#xd;
+		if (form_aux.getValue(posicao, &quot;statusAssinatura&quot;) == &quot;Assinado&quot;  ||&#xd;
+			form_aux.getValue(posicao, &quot;statusAssinatura&quot;) == &quot;Rejeitado&quot; ||&#xd;
+			form_aux.getValue(posicao, &quot;statusAssinatura&quot;) == &quot;Cancelado&quot;){&#xd;
+			finalizado = true;&#xd;
+		}&#xd;
+	} else {&#xd;
+		log.info(&quot;&gt;&gt;&gt; Não localizado Formulário Auxiliar, irá finalizar com erros&quot;);&#xd;
+		finalizado = true;&#xd;
+	}&#xd;
+	&#xd;
+	return finalizado;&#xd;
 }</eventDescription>
     </WorkflowProcessEvent>
     <WorkflowProcessEvent>
@@ -3339,14 +3786,14 @@ function replaceString(documentId){&#xd;
         <processId>Conciliacao_contabil</processId>
         <version>1</version>
       </workflowProcessEventPK>
-      <eventDescription>function servicetask148(attempt, message) {
-    log.info(&quot;#### &gt;&gt; ADITIVO TASK148 - INICIO&quot;)
-    var nr_pasta = hAPI.getCardValue(&quot;txt_26_nrPasta&quot;);
-    var idDocumento = hAPI.getCardValue(&quot;txt_26_idDocumento&quot;)
-    var solicitacao = getValue(&quot;WKNumProces&quot;)
-    var nmArquivo = hAPI.getCardValue(&quot;txt_26_nomeDocumento&quot;);
-    anexaDocumentoAssinado(idDocumento,nr_pasta,solicitacao,nmArquivo+&apos;_assinado.pdf&apos;)
-    log.info(&quot;#### &gt;&gt; ADITIVO TASK148 - FIM&quot;)
+      <eventDescription>function servicetask148(attempt, message) {&#xd;
+    log.info(&quot;#### &gt;&gt; ADITIVO TASK148 - INICIO&quot;)&#xd;
+    var nr_pasta = hAPI.getCardValue(&quot;txt_26_nrPasta&quot;);&#xd;
+    var idDocumento = hAPI.getCardValue(&quot;txt_26_idDocumento&quot;)&#xd;
+    var solicitacao = getValue(&quot;WKNumProces&quot;)&#xd;
+    var nmArquivo = hAPI.getCardValue(&quot;txt_26_nomeDocumento&quot;);&#xd;
+    anexaDocumentoAssinado(idDocumento,nr_pasta,solicitacao,nmArquivo+&apos;_assinado.pdf&apos;)&#xd;
+    log.info(&quot;#### &gt;&gt; ADITIVO TASK148 - FIM&quot;)&#xd;
 }</eventDescription>
     </WorkflowProcessEvent>
   </list>
@@ -3370,7 +3817,7 @@ function replaceString(documentId){&#xd;
     </SwimLane>
     <SwimLane>
       <color>d0daae</color>
-      <height>221</height>
+      <height>361</height>
       <width>1011</width>
       <positionX>0</positionX>
       <positionY>1520</positionY>
@@ -3702,7 +4149,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>16</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -3713,7 +4160,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>17</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -3724,7 +4171,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>17</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -3735,7 +4182,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>18</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -3746,7 +4193,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>18</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -3757,7 +4204,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>19</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -3768,7 +4215,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>19</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -3779,7 +4226,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>20</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -3790,7 +4237,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>20</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -3801,7 +4248,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>20</linkSequence>
         <bendSequence>3</bendSequence>
       </processLinkBendPK>
@@ -3812,7 +4259,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>21</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -3823,7 +4270,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>21</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -3834,7 +4281,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>21</linkSequence>
         <bendSequence>3</bendSequence>
       </processLinkBendPK>
@@ -3845,7 +4292,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>22</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -3856,7 +4303,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>22</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -3867,7 +4314,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>22</linkSequence>
         <bendSequence>3</bendSequence>
       </processLinkBendPK>
@@ -3878,7 +4325,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>25</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -3889,7 +4336,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>25</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -3900,7 +4347,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>26</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -3911,7 +4358,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>26</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -3922,7 +4369,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>27</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -3933,7 +4380,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>27</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -3944,7 +4391,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>28</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -3955,7 +4402,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>28</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -3966,7 +4413,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>29</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -3977,7 +4424,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>29</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -3988,7 +4435,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>30</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -3999,7 +4446,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>30</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -4010,7 +4457,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>43</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -4021,7 +4468,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>43</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -4032,7 +4479,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>44</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -4043,7 +4490,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>44</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -4054,7 +4501,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>46</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -4065,7 +4512,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>46</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -4076,7 +4523,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>47</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -4087,7 +4534,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>47</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -4098,7 +4545,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>48</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -4109,7 +4556,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>48</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -4120,7 +4567,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>49</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -4131,7 +4578,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>49</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -4142,7 +4589,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>51</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -4153,7 +4600,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>51</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -4164,7 +4611,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>52</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -4175,7 +4622,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>52</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -4186,7 +4633,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>69</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -4197,7 +4644,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>69</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -4208,7 +4655,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>70</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -4219,7 +4666,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>70</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -4230,7 +4677,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>71</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -4241,7 +4688,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>72</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -4252,7 +4699,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>73</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -4263,7 +4710,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>73</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -4274,7 +4721,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>74</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -4285,7 +4732,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>74</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -4296,7 +4743,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>80</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -4307,7 +4754,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>80</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -4318,7 +4765,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>81</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -4329,7 +4776,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>81</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -4340,7 +4787,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>82</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -4351,7 +4798,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>83</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -4362,7 +4809,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>84</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -4373,7 +4820,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>84</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -4384,7 +4831,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>85</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -4395,7 +4842,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>85</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -4406,7 +4853,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>97</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -4417,7 +4864,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>97</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -4428,18 +4875,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
-        <linkSequence>103</linkSequence>
-        <bendSequence>1</bendSequence>
-      </processLinkBendPK>
-      <positionX>103</positionX>
-      <positionY>1552</positionY>
-    </ProcessLinkBend>
-    <ProcessLinkBend>
-      <processLinkBendPK>
-        <companyId>1</companyId>
-        <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>109</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -4450,7 +4886,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>109</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -4461,7 +4897,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>116</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -4472,7 +4908,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>116</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -4483,7 +4919,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>142</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -4494,7 +4930,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>142</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -4505,7 +4941,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>143</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -4516,7 +4952,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>143</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -4527,7 +4963,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>169</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -4538,7 +4974,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>170</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -4549,7 +4985,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>170</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -4560,7 +4996,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>171</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -4571,7 +5007,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>173</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -4582,7 +5018,7 @@ function replaceString(documentId){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <linkSequence>174</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -4595,7 +5031,7 @@ function replaceString(documentId){&#xd;
       <processStateTriggerPK>
         <companyId>1</companyId>
         <processId>Conciliacao_contabil</processId>
-        <version>11</version>
+        <version>12</version>
         <stateSequence>149</stateSequence>
         <triggerSequence>0</triggerSequence>
       </processStateTriggerPK>
@@ -4693,6 +5129,60 @@ function replaceString(documentId){&#xd;
       <expressionOrder>2</expressionOrder>
       <ruleOrder>1</ruleOrder>
       <field>rd_23_efetivarConciliacao</field>
+      <value>Nao</value>
+      <operator>1</operator>
+      <valueType>1</valueType>
+    </ConditionProcessAutomaticRules>
+    <ConditionProcessAutomaticRules>
+      <sequence>191</sequence>
+      <expressionOrder>1</expressionOrder>
+      <ruleOrder>1</ruleOrder>
+      <field>rd_189_apPaineis</field>
+      <value>Sim</value>
+      <operator>1</operator>
+      <valueType>1</valueType>
+    </ConditionProcessAutomaticRules>
+    <ConditionProcessAutomaticRules>
+      <sequence>191</sequence>
+      <expressionOrder>2</expressionOrder>
+      <ruleOrder>1</ruleOrder>
+      <field>rd_189_apPaineis</field>
+      <value>Nao</value>
+      <operator>1</operator>
+      <valueType>1</valueType>
+    </ConditionProcessAutomaticRules>
+    <ConditionProcessAutomaticRules>
+      <sequence>195</sequence>
+      <expressionOrder>1</expressionOrder>
+      <ruleOrder>1</ruleOrder>
+      <field>rd_27_apGerencia</field>
+      <value>Sim</value>
+      <operator>1</operator>
+      <valueType>1</valueType>
+    </ConditionProcessAutomaticRules>
+    <ConditionProcessAutomaticRules>
+      <sequence>195</sequence>
+      <expressionOrder>2</expressionOrder>
+      <ruleOrder>1</ruleOrder>
+      <field>rd_27_apGerencia</field>
+      <value>Nao</value>
+      <operator>1</operator>
+      <valueType>1</valueType>
+    </ConditionProcessAutomaticRules>
+    <ConditionProcessAutomaticRules>
+      <sequence>199</sequence>
+      <expressionOrder>1</expressionOrder>
+      <ruleOrder>1</ruleOrder>
+      <field>rd_28_apDiretoria</field>
+      <value>Sim</value>
+      <operator>1</operator>
+      <valueType>1</valueType>
+    </ConditionProcessAutomaticRules>
+    <ConditionProcessAutomaticRules>
+      <sequence>199</sequence>
+      <expressionOrder>2</expressionOrder>
+      <ruleOrder>1</ruleOrder>
+      <field>rd_28_apDiretoria</field>
       <value>Nao</value>
       <operator>1</operator>
       <valueType>1</valueType>

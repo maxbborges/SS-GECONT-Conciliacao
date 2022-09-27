@@ -28,7 +28,10 @@ var ACTIVITY = {
     EFETIVAR_CONCILIACAO:89,
     REPROCESSAMENTO:168,
     VALIDAR_SALDOS:98,
+    FECHAR_DESPACHO:184,
+    FECHAR_CALENDARIO:186,
     GERAR_BALANCETE:99,
+    VALIDAR_PAINEIS:189,
     APROVAR_GERENCIA:177,
     APROVAR_DIRETORIA:181
 }
@@ -61,7 +64,10 @@ var DIVS =[
     "div_23",//24
     "div_24",//25
     "div_25",//26
-    "div_26",//27
-    "div_27",//28
-    "div_28",//29
+    "div_184",//27 --
+    "div_186",//28
+    "div_26",//29
+    "div_189",//30
+    "div_27",//31
+    "div_28",//32
 ]
