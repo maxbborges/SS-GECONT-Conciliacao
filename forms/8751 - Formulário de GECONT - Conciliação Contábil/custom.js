@@ -6,6 +6,16 @@ $(document).ready(function () {
         anexarArquivo('oficioEntregaBalancetes',nProcesso,'#txt_26_nomeDocumento')
     })
 
+    $('#btn_anexaBalancete').on('click',function(){
+        anexarArquivo('balancetes',nProcesso,'#txt_26_nomeBalancete')
+    })
+
+    
+
+    $('#btn_visualizarBalancete').on('click',function(){
+        visualizarArquivo($("#txt_26_nomeBalancete").val())
+    })
+
     $('#btn_enviaAssinatura').on('click',function(){
         var nrPasta=$('#nrPasta').val()
         var	nmArquivo=$('#txt_26_nomeDocumento').val()
@@ -25,138 +35,142 @@ $(document).ready(function () {
 });
 
 function hideDivs(){
-    $('#div_14').hide();
-    $('#div_15').hide();
+   $('#div_14').hide();
+   $('#div_15').hide();
 
-    if(FORM_MODE=='VIEW'){
-        for (i=0;i<DIVS.length;i++){
-            $('#'+DIVS[i]+' button').hide();
-        }
-    }
+   if(FORM_MODE=='VIEW'){
+       for (i=0;i<DIVS.length;i++){
+           $('#'+DIVS[i]+' button').hide();
+       }
+   }
 
-    if (ATIVIDADE==ACTIVITY.ZERO || ATIVIDADE==ACTIVITY.INICIO){
-        hideBlockDivs(0)
-    }
+   if (ATIVIDADE==ACTIVITY.ZERO || ATIVIDADE==ACTIVITY.INICIO){
+       hideBlockDivs(0)
+   }
 
-    if (ATIVIDADE==ACTIVITY.GERENCIAS){
-        hideBlockDivs(1)
-    }
+   if (ATIVIDADE==ACTIVITY.GERENCIAS){
+       hideBlockDivs(1)
+   }
 
-    if (ATIVIDADE==ACTIVITY.GECONT){
-        hideBlockDivs(2)
-    }
+   if (ATIVIDADE==ACTIVITY.GECONT){
+       hideBlockDivs(2)
+   }
 
-    if (ATIVIDADE==ACTIVITY.GEPES){
-        hideBlockDivs(3)
-    }
+   if (ATIVIDADE==ACTIVITY.GEPES){
+       hideBlockDivs(3)
+   }
 
-    if (ATIVIDADE==ACTIVITY.GEFIN){
-        hideBlockDivs(4)
-    }
+   if (ATIVIDADE==ACTIVITY.GEFIN){
+       hideBlockDivs(4)
+   }
 
-    if (ATIVIDADE==ACTIVITY.GEAD1){
-        hideBlockDivs(5)
-    }
+   if (ATIVIDADE==ACTIVITY.GEAD1){
+       hideBlockDivs(5)
+   }
 
-    if (ATIVIDADE==ACTIVITY.GEAD2){
-        hideBlockDivs(6)
-    }
+   if (ATIVIDADE==ACTIVITY.GEAD2){
+       hideBlockDivs(6)
+   }
 
-    if (ATIVIDADE==ACTIVITY.ASSJUR){
-        hideBlockDivs(7)
-    }
+   if (ATIVIDADE==ACTIVITY.ASSJUR){
+       hideBlockDivs(7)
+   }
 
-    if (ATIVIDADE==ACTIVITY.GERAR_CONTABILIZACAO){
-        hideBlockDivs(8)
-    }
+   if (ATIVIDADE==ACTIVITY.GERAR_CONTABILIZACAO){
+       hideBlockDivs(8)
+   }
 
-    if (ATIVIDADE==ACTIVITY.PESSOAL){
-        hideBlockDivs(9)
-    }
+   if (ATIVIDADE==ACTIVITY.PESSOAL){
+       hideBlockDivs(9)
+   }
 
-    if (ATIVIDADE==ACTIVITY.FINANCEIRO){
-        hideBlockDivs(10)
-    }
+   if (ATIVIDADE==ACTIVITY.FINANCEIRO){
+       hideBlockDivs(10)
+   }
 
-    if (ATIVIDADE==ACTIVITY.COMPRAS){
-        hideBlockDivs(11)
-    }
+   if (ATIVIDADE==ACTIVITY.COMPRAS){
+       hideBlockDivs(11)
+   }
 
-    if (ATIVIDADE==ACTIVITY.PATRIMONIO){
-        hideBlockDivs(12)
-    }
+   if (ATIVIDADE==ACTIVITY.PATRIMONIO){
+       hideBlockDivs(12)
+   }
 
-    if (ATIVIDADE==ACTIVITY.ESTOQUE){
-        hideBlockDivs(13)
-    }
+   if (ATIVIDADE==ACTIVITY.ESTOQUE){
+       hideBlockDivs(13)
+   }
 
-    if (ATIVIDADE==ACTIVITY.VALIDAR_CONTABILIZACAO){
-        hideBlockDivs(14)
-    }
+   if (ATIVIDADE==ACTIVITY.VALIDAR_CONTABILIZACAO){
+       hideBlockDivs(14)
+   }
 
-    if (ATIVIDADE==ACTIVITY.ATIVO){
-        hideBlockDivs(17)
-    }
+   if (ATIVIDADE==ACTIVITY.ATIVO){
+       hideBlockDivs(17)
+   }
 
-    if (ATIVIDADE==ACTIVITY.PASSIVO){
-        hideBlockDivs(18)
-    }
+   if (ATIVIDADE==ACTIVITY.PASSIVO){
+       hideBlockDivs(18)
+   }
 
-    if (ATIVIDADE==ACTIVITY.RECEITA_ORCAMENTARIA){
-        hideBlockDivs(19)
-    }
+   if (ATIVIDADE==ACTIVITY.RECEITA_ORCAMENTARIA){
+       hideBlockDivs(19)
+   }
 
-    if (ATIVIDADE==ACTIVITY.DESPESA_ORCAMENTARIA){
-        hideBlockDivs(20)
-    }
+   if (ATIVIDADE==ACTIVITY.DESPESA_ORCAMENTARIA){
+       hideBlockDivs(20)
+   }
 
-    if (ATIVIDADE==ACTIVITY.RECEITA_EXTRA){
-        hideBlockDivs(21)
-    }
+   if (ATIVIDADE==ACTIVITY.RECEITA_EXTRA){
+       hideBlockDivs(21)
+   }
 
-    if (ATIVIDADE==ACTIVITY.DESPESA_EXTRA){
-        hideBlockDivs(22)
-    }
+   if (ATIVIDADE==ACTIVITY.DESPESA_EXTRA){
+       hideBlockDivs(22)
+   }
 
-    if (ATIVIDADE==ACTIVITY.VALIDAR_CONCILIACAO){
-        hideBlockDivs(23)
-    }
+   if (ATIVIDADE==ACTIVITY.VALIDAR_CONCILIACAO){
+       hideBlockDivs(23)
+   }
 
-    if (ATIVIDADE==ACTIVITY.EFETIVAR_CONCILIACAO){
-        hideBlockDivs(24)
-    }
+   if (ATIVIDADE==ACTIVITY.EFETIVAR_CONCILIACAO){
+       hideBlockDivs(24)
+   }
 
-    if (ATIVIDADE==ACTIVITY.REPROCESSAMENTO){
-        hideBlockDivs(25)
-    }
+   if (ATIVIDADE==ACTIVITY.REPROCESSAMENTO){
+       hideBlockDivs(25)
+   }
 
-    if (ATIVIDADE==ACTIVITY.VALIDAR_SALDOS){
-        hideBlockDivs(26)
-    }
+   if (ATIVIDADE==ACTIVITY.VALIDAR_SALDOS){
+       hideBlockDivs(26)
+   }
 
-    if (ATIVIDADE==ACTIVITY.FECHAR_DESPACHO){
-        hideBlockDivs(27)
-    }
+   if (ATIVIDADE==ACTIVITY.FECHAR_DESPACHO){
+       hideBlockDivs(27)
+   }
 
-    if (ATIVIDADE==ACTIVITY.FECHAR_CALENDARIO){
-        hideBlockDivs(28)
-    }
+   if (ATIVIDADE==ACTIVITY.FECHAR_CALENDARIO){
+       hideBlockDivs(28)
+   }
 
-    if (ATIVIDADE==ACTIVITY.GERAR_BALANCETE){
-        hideBlockDivs(29)
-    }
+   if (ATIVIDADE==ACTIVITY.GERAR_BALANCETE){
+       hideBlockDivs(29)
+   }
 
-    if (ATIVIDADE==ACTIVITY.VALIDAR_PAINEIS){
-        hideBlockDivs(30)
-    }
+   if (ATIVIDADE==ACTIVITY.VALIDAR_PAINEIS){
+       hideBlockDivs(30)
+   }
 
-    if (ATIVIDADE==ACTIVITY.APROVAR_GERENCIA){
-        hideBlockDivs(31)
-    }
+   if (ATIVIDADE==ACTIVITY.APROVAR_GERENCIA){
+       hideBlockDivs(31)
+   }
 
-    if (ATIVIDADE==ACTIVITY.APROVAR_DIRETORIA){
-        hideBlockDivs(32)
-    }
+   if (ATIVIDADE==ACTIVITY.APROVAR_DIRETORIA){
+       hideBlockDivs(32)
+   }
+
+   if (ATIVIDADE!=203){
+    // hideBlockDivs(32)
+   }
 }
 
 function validaVertsign(elementoDiv){
@@ -277,6 +291,7 @@ var beforeSendValidate = function (numState, nextState) {
     if (ATIVIDADE==ACTIVITY.GERAR_BALANCETE){
         validaCamposRequired(DIVS[29])
         validaVertsign("#txt_26_nomeDocumento")
+        validaVertsign("#txt_26_nomeBalancete")
     }
 
     if (ATIVIDADE==ACTIVITY.VALIDAR_PAINEIS){
