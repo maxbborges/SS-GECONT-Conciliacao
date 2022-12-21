@@ -1,35 +1,38 @@
 function displayFields(form, customHTML) {
-	customHTML.append("<script> var ATIVIDADE = "+getValue("WKNumState")+";</script>"); 
+    console.log(form)
+
+    customHTML.append("<script> var ATIVIDADE = " + getValue("WKNumState") + ";</script>");
     // customHTML.append("<script> var USUARIO ="+ getValue("WKUser") + "; </script>");
-	// customHTML.append("<script>function getUser(){ return '"+ getValue("WKUser") + "'; }</script>");
-	customHTML.append("<script> var FORM_MODE = '" + form.getFormMode() + "';</script>");
+    // customHTML.append("<script>function getUser(){ return '"+ getValue("WKUser") + "'; }</script>");
+    customHTML.append("<script> var FORM_MODE = '" + form.getFormMode() + "';</script>");
     customHTML.append("<script> var nProcesso = '" + getValue("WKNumProces") + "';</script>");
-	
-	var process = getValue("WKNumProces");
-	// var usuario = getValue('WKUser');
-	var activity = getValue('WKNumState');
-	var data = new Date();
-	var mes = (data.getMonth()+1);
-    if (mes<=9){
-        mes = '0'+mes;
+    customHTML.append("<script> var nProcesso = '" + getValue("WKNumProces") + "';</script>");
+
+    var process = getValue("WKNumProces");
+    // var usuario = getValue('WKUser');
+    var activity = getValue('WKNumState');
+    var data = new Date();
+    var mes = (data.getMonth() + 1);
+    if (mes <= 9) {
+        mes = '0' + mes;
     }
-    form.setValue('txt_26_nrSolicitacao',process);
-
-    
-    
+    form.setValue('txt_26_nrSolicitacao', process);
 
 
-	var usuario = fluigAPI.getUserService().getCurrent();
-   
-	if(activity==0||activity==4){
-		form.setValue('current_user_name',usuario.getFullName());
-    	form.setValue('ipCadastro',data.getDate()+'/'+mes+'/'+data.getFullYear());
-    	form.setValue('ipSituacao',"Novo");
-	} 
-	// var move_type = form.getValue('move_type');
+
+
+
+    var usuario = fluigAPI.getUserService().getCurrent();
+
+    if (activity == 0 || activity == 4) {
+        form.setValue('current_user_name', usuario.getFullName());
+        form.setValue('ipCadastro', data.getDate() + '/' + mes + '/' + data.getFullYear());
+        form.setValue('ipSituacao', "Novo");
+    }
+    // var move_type = form.getValue('move_type');
     // var desc_move = form.getValue('desc_move');
-	// var historico = form.getValue('Tracking');
-	// var nomeAtividade = {
+    // var historico = form.getValue('Tracking');
+    // var nomeAtividade = {
     //     1: 'Inicio',
     //     2: 'Área Responsável',
     //     3: 'Automático',
@@ -38,7 +41,7 @@ function displayFields(form, customHTML) {
     //     14: 'Auto Atribuir',
     // }
 
-	if (activity == 6) {
+    if (activity == 6) {
 
     }
     //     var data = new Date();
@@ -49,7 +52,7 @@ function displayFields(form, customHTML) {
     //     // }
     //     // form.setValue('proc_year', data.getDate()+'/'+mes+'/'+data.getFullYear())
     //     form.setValue('year_save', data.getFullYear());
-        
+
     // } else {
     //     // form.setValue('proc_number', process)
     //     // if (desc_move != '') {

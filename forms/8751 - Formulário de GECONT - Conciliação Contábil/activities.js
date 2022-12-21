@@ -8,7 +8,14 @@ var ACTIVITY = {
     GEAD1:12,
     GEAD2:13,
     ASSJUR:141,
-    GERAR_CONTABILIZACAO:33,
+    INTERACAO_GERENCIAS:218,
+    INTERACAO_GECONT:219,
+    INTERACAO_GEPES:220,
+    INTERACAO_GEFIN:221,
+    INTERACAO_GEAD1:222,
+    INTERACAO_GEAD2:223,
+    INTERACAO_ASSJUR:224,
+    VALIDAR_AREAS:203,
     PESSOAL:37,
     FINANCEIRO:38,
     COMPRAS:39,
@@ -35,39 +42,3 @@ var ACTIVITY = {
     APROVAR_GERENCIA:177,
     APROVAR_DIRETORIA:181
 }
-
-var DIVS =[
-    "div_000",//0
-    "div_00",//1
-    "div_01",//2
-    "div_02",//3
-    "div_03",//4
-    "div_04",//5
-    "div_05",//6
-    "div_06",//7
-    "div_07",//8
-    "div_08",//9
-    "div_09",//10
-    "div_10",//11
-    "div_11",//12
-    "div_12",//13
-    "div_13",//14
-    "div_14",//15
-    "div_15",//16-DESABILITADO
-    "div_16",//17
-    "div_17",//18
-    "div_18",//19
-    "div_19",//20
-    "div_20",//21
-    "div_21",//22
-    "div_22",//23
-    "div_23",//24
-    "div_24",//25
-    "div_25",//26
-    "div_184",//27 --
-    "div_186",//28
-    "div_26",//29
-    "div_189",//30
-    "div_27",//31
-    "div_28",//32
-]

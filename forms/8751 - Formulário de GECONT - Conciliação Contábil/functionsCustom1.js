@@ -31,25 +31,26 @@
 // 		'standard': true
 // 	}
 // ]
+
 //=========================================================== EXIBIR DIVS HIDDEN ===========================================================
-function exibirDivsHidden() {
-	setTimeout(function () {
-		dados = $("input[type='hidden']")
-		for (i = 0; i < dados.length; i++) {
-			dados[i].type = 'text'
+function exibirDivsHidden(){
+	setTimeout(() => {
+		dados=$("input[type='hidden']")
+		for(i=0;i<dados.length;i++){
+			dados[i].type='text'
 		}
 	}, 300);
 }
 
 //=========================================================== ATTACHMENTS ===========================================================
-function anexarArquivo(param, nrProcesso) {
+function anexarArquivo(param, nrProcesso, retornoNomeArquivo) {
 	var data = new Date();
-	var dataparemeter = ('____' + nrProcesso + "_" + data.getTime());
+	var dataparemeter = ('_' + nrProcesso + "___" + data.getTime());
 	JSInterface.showCamera(param + dataparemeter);
 
-	// $(retornoNomeArquivo).val(param + dataparemeter)
+	$(retornoNomeArquivo).val(param + dataparemeter)
 
-	setTimeout(function () {
+	setTimeout(() => {
 		window.parent.$('#workflow-detail-card').removeClass()
 		window.parent.$('#workflowview-header .active').removeClass('active').removeClass('out')
 	}, 500);
@@ -121,10 +122,8 @@ function createFilterZoom(dataset, params, paramsNot, columns, displayKey, multi
 }
 
 //=========================================================== CRIAR PDF ===========================================================
-function createPdfByForm(listDivsHide, listDivsShow, nrPasta, nrSolicitacao, nmArquivo, retornoIdArquivo, retornoNomeArquivo) {
-	var loading = FLUIGC.loading(window);
-	loading.show();
-	for (var i = 0; i < listDivsHide.length; i++) {
+function createPdfByForm(listDivsHide, listDivsShow, nrPasta, nrSolicitacao, nmArquivo, retornoIdArquivo) {
+	for (var i = 0; i < listDivsHide; i++) {
 		$(listDivsHide[i]).hide(); // div que não será gerada no pdf
 	}
 
@@ -156,8 +155,6 @@ function createPdfByForm(listDivsHide, listDivsShow, nrPasta, nrSolicitacao, nmA
 				if (dsDocument.values.length > 0) {
 					documentId = dsDocument.values[0]["documentId"];
 					$(retornoIdArquivo).val(documentId)
-					$(retornoNomeArquivo).val(nm_arquivo)
-					loading.hide();
 					FLUIGC.toast({
 						message: 'Formulário do Processo gerado com sucesso.',
 						type: 'success'
@@ -167,51 +164,26 @@ function createPdfByForm(listDivsHide, listDivsShow, nrPasta, nrSolicitacao, nmA
 		}
 	});
 
-	for (var i = 0; i < listDivsHide.length; i++) {
+	for (var i = 0; i < listDivsHide; i++) {
 		$(listDivsHide[i]).show(); // apresentar novamente a div
 	}
 }
 
 //=========================================================== OUTROS ===========================================================
-function obtemIds() {
-	var retval = []
-	$('.panel.panel-info').each(function () {
-		retval.push($(this).attr('id'))
-	})
-	return retval
-}
-
-function hideBlockDivs(divVisivel, divNaoEditavel, hideAnteriores) {
-	DIVS = obtemIds()
-	var hideNext = false
+function hideBlockDivs(divVisivel) {
 	for (i = 0; i < DIVS.length; i++) {
-		if ($.inArray(DIVS[i], divVisivel) >= 0) {
+		if (DIVS[i] == divVisivel || i == divVisivel) {
 			$('#' + DIVS[i] + ' .collapse').collapse('show')
-			hideNext = true
 			continue;
 		}
-
-		if ($.inArray(DIVS[i], hideAnteriores) >= 0) {
-			$('#' + DIVS[i]).hide();
-		}
-
 		$('#' + DIVS[i] + ' button').hide();
 		$('#' + DIVS[i] + ' textarea').prop('readonly', 'true');
-		$('#' + DIVS[i] + ' input.form-control[type="text"]').prop('readonly', 'true');
-		$('#' + DIVS[i] + ' input.form-control[type="number"]').prop('readonly', 'true');
-		$('#' + DIVS[i] + ' input[type="zoom"]').next().prop("style", "background-color:#f2f2f2")
-		$('#' + DIVS[i] + ' input[type="zoom"]').parent().prop("style", "pointer-events: none")
-		$('#' + DIVS[i] + ' select').prop("style", "pointer-events: none; background-color:#f2f2f2")
 		$('#' + DIVS[i] + ' input:radio:not(:checked)').prop('disabled', 'true');
 		$('#' + DIVS[i] + ' input:checkbox:not(:checked)').prop('disabled', 'true');
 		$('#' + DIVS[i] + ' button').hide();
 
-		if (hideNext) {
-			if ($.inArray(DIVS[i], divNaoEditavel) >= 0) {
-
-			} else {
-				$('#' + DIVS[i]).hide();
-			}
+		if (i > divVisivel) {
+			$('#' + DIVS[i]).hide();
 		}
 	}
 }
@@ -223,113 +195,66 @@ function validaCamposRequired(elementoDiv) {
 		if ($(elemento).attr('class') == 'radio-options' || $(elemento).attr('class') == 'check-options') {
 			if ($(elemento).find('input:checked').val() == undefined) {
 				elementoName = $(elemento).find('input').attr("name")
-				$('[name="' + elementoName + '"]').focus()
-				msgValidade(elementoName + ' obrigatório!');
+				$('[name="'+elementoName+'"]').focus()
+				ExibirMensagem.msg( elementoName+ ' obrigatório!'); 
+				
 				break;
 			}
 		} else {
 			if ($(elemento).val() == '' || $(elemento).val() == null) {
 				elementoName = $(elemento).attr("name")
-				$('[name="' + elementoName + '"]').focus()
-				msgValidade(elementoName + ' obrigatório!');
+				$('[name="'+elementoName+'"]').focus()
+				ExibirMensagem.msg( elementoName+ ' obrigatório!'); 
 				break;
 			}
 		}
 	}
 }
 
-function validaArquivosRequired(nmArquivo, destino) {
-	var valid = false
-	$.each(parent.ECM.attachmentTable.getData(), function (i, attachment) {
-		//let nmArquivo=$('[name="txt_07_validaArquivo"]').val().split('____')[0]
-		let description = attachment.description;
-		var nmsArquivo = (description).split('____')[0];
-		let attachmentId = attachment.id;
-		let attachmentName = attachment.name;
-		if (nmsArquivo == nmArquivo) {
-			$(destino).val(description)
-			valid = true
-		}
-	});
-	if (!valid) {
-		throw msgValidade("Necessário Anexar arquivo")
-	}
-}
-
-function loadMasks() {
-	$(".money").maskMoney();
-	$('.date').mask('00/00/0000');
-	$('.money').mask('000.000.000.000.000,00', { reverse: true });
-	$('.cpf').mask('000.000.000-00', { reverse: true });
-	$('.percent').mask('##0,00%', { reverse: true });
-}
-
-function msgValidade(mensagem) {
-	throw "<div class='alert alert-warning' role='alert'>" +
-	"<strong>Atenção:</strong> " + mensagem +
-	"</div><i class='fluigicon fluigicon-tag icon-sm'></i> <font style='font-weight: bold'>Dúvidas?</font> Entre em contato com o departamento de TI.";
-}
-
-function msgsToast(titulo, msg, tipo) {
-	FLUIGC.toast({
-		title: titulo,
-		message: msg,
-		type: tipo
-	});
-	if (tipo == 'danger') {
-		throw "Erro! " + msg
-	}
-}
-
 //=========================================================== ASSINATURA ===========================================================
 function customAssinatura(nrPasta, nmArquivo, idDocumento, solicitacao, listaDeAtividades, atividadeResponsaval, tabela, userIds, UserEmails, divValidacao) {
-	var loading = FLUIGC.loading(window);
-	loading.show();
 	var data = new Date().toLocaleDateString('pt-BR')
 	var hora = new Date().toLocaleTimeString('pt-BR')
 	var emails = []
 	var assinantes = [] // Dicionário com os assinantes
 
-	// RECUPERAR O RESPONSÁVEL POR ENVIAR PARA A VERTSING - INICIO
 	var params = [{ name: "processInstanceId", value: solicitacao }, { name: "choosedSequence", value: atividadeResponsaval }]
-	var paramsNot = [{ name: "choosedColleagueId", value: 'System:Auto' }]
-	var columns = ["choosedColleagueId", "colleagueName"]
-	var processTask = customDataset("processTask", params, paramsNot, columns) //Consulta todas as atividades do processo
-	if (processTask.length == 0) { throw "ERRO!" }
-
-	var params = [{ name: "colleaguePK.colleagueId", value: processTask[processTask.length - 1]['choosedColleagueId'] }]
+	var paramsNot = [{ name: "processTaskPK.colleagueId", value: 'System:Auto' }]
 	var columns = ["colleagueId", "colleagueName"]
+	var processTask = customDataset("processTask", params, paramsNot, columns) //Consulta todas as atividades do processo
+	if (processTask.length == 0) { msgsToast('Erro!','danger') }
+
+	var params = [{ name: "colleaguePK.colleagueId", value: processTask[processTask.length - 1]['processTaskPK.colleagueId'] }]
 	var colleague = customDataset("colleague", params, [], columns) // Recupera o usuário da atividade designada
-	if (colleague.length == 0) { throw "ERRO!" } // verifica se encontrou algum usuário
+	console.log(colleague)
+	if (colleague.length == 0) { msgsToast('Erro!','danger') } // verifica se encontrou algum usuário
 
 	var responsavelId = colleague[colleague.length - 1]["colleagueId"] // Recupera o id do responsável pelo envio
 	var responsavelNome = colleague[colleague.length - 1]["colleagueName"] // Recupera o nome do responsável pelo envio
-	// RECUPERAR O RESPONSÁVEL POR ENVIAR PARA A VERTSING - FIM
 
 	for (var i = 0; i < listaDeAtividades.length; i++) { // Busca IDs por atividade
 		var params = [{ name: "processInstanceId", value: solicitacao }, { name: "choosedSequence", value: listaDeAtividades[i] }]
-		var processTask = customDataset("processTask", params, paramsNot, ["choosedColleagueId"])
-		if (processTask.length == 0) { throw "ERRO!" }
-		userIds.push(processTask[processTask.length - 1]['choosedColleagueId'])
+		var processTask = customDataset("processTask", params, paramsNot, ["colleagueId"])
+		if (processTask.length == 0) { msgsToast('Erro!','danger') }
+		userIds.push(processTask[processTask.length - 1]['processTaskPK.colleagueId'])
 	}
 
 	for (var i = 0; i < userIds.length; i++) { // busca emails dos usuários por ID
 		var params = [{ name: "colleagueId", value: userIds[i] }]
 		var colleague = customDataset("colleague", params, [], ["mail"])
-		if (colleague.length == 0) { throw "ERRO!" }
+		if (colleague.length == 0) { msgsToast('Erro!','danger') }
 		var userMail = colleague[0].mail
 		if (emails.indexOf(userMail) == -1) { emails.push(userMail) }
 	}
 
-
-	for (var i = 0; i < tabela.length; i++) { if (emails.indexOf(tabela[i]) == -1) { emails.push(tabela[i]) } }
-	for (var i = 0; i < UserEmails.length; i++) { if (emails.indexOf(UserEmails[i]) == -1) { emails.push(UserEmails[i]) } }
-	if (emails.length == 0) { throw "ERRO!" }
+	if (emails.length == 0) { msgsToast('Erro!','danger') }
+	emails = emails.concat(tabela)
+	emails = emails.concat(UserEmails)
 
 	for (var i = 0; i < emails.length; i++) {
 		params = [{ name: "email", value: emails[i] }]
 		var dsBusca = customDataset("ds_busca_assinante", params, [], null)
-		if (dsBusca.length == 0) { throw "ERRO!" }
+		if (dsBusca.length == 0) { msgsToast('Assinantes não encontrados!','danger') }
 		assinantes.push({
 			nome: new String(dsBusca[0].nome),
 			email: new String(dsBusca[0].email),
@@ -358,15 +283,14 @@ function customAssinatura(nrPasta, nmArquivo, idDocumento, solicitacao, listaDeA
 	]
 	setTimeout(function () {
 		dsAux = customDataset("ds_auxiliar_vertsign", params, [], null) // Cria o formulário vertsign
-		if (dsAux == null || dsAux.length == 0) { throw "ERRO!" } // Verifica se houve erro na criação do form
+		if (dsAux == null || dsAux.length == 0) { msgsToast('Erro!','danger') } // Verifica se houve erro na criação do form
 
 		setTimeout(function () {
-			// var dsUpload=customDataset("ds_upload_vertsign",params) // Faz envio do arquivo para a vertsign
-			// if (dsUpload.length == 0) {throw "ERRO!"} // Verifica se foi enviado
-
+			// var dsUp=customDataset("ds_upload_vertsign",[], [], null) // Faz envio do arquivo para a vertsign
+			// console.log(dsUP)
 			var params = [{ name: "numSolic", value: solicitacao }]
 			var dsFormAux = customDataset("ds_form_aux_vertsign", params, [], null) // Recupera os formulários enviados da solicitação
-			if (dsFormAux.length == 0) { throw "ERRO!" } // Verifica se existem formulários enviados
+			if (dsFormAux.length == 0) { msgsToast('Erro!','danger') } // Verifica se existem formulários enviados
 
 			var params = [{ name: "codArquivo", value: dsFormAux[dsFormAux.length - 1].codArquivo }] // Recupera o codigo do arquivo vertsign
 			customDataset("ds_upload_vertsign_manual", params, [], null) // Faz envio do arquivo para a vertsign
@@ -374,15 +298,14 @@ function customAssinatura(nrPasta, nmArquivo, idDocumento, solicitacao, listaDeA
 			setTimeout(function () {
 				var params = [{ name: "numSolic", value: solicitacao }]
 				var dsFormAux = customDataset("ds_form_aux_vertsign", params, [], null) // Recupera os formulários enviados da solicitação
-				if (dsFormAux.length == 0) { throw "ERRO!" } // Verifica se existem formulários enviados
+				if (dsFormAux.length == 0) { msgsToast('Erro!','danger') } // Verifica se existem formulários enviados
 
 				statusAssinatura = dsFormAux[dsFormAux.length - 1].statusAssinatura // Recupera o ultimo fomulário enviado
-				if (statusAssinatura == "Enviando para assinatura") { throw "ERRO!" } // Verifica se continua pendente
-
-				$(divValidacao).val('ok')
-				loading.hide();
+				if (statusAssinatura == "Enviando para assinatura") { msgsToast('Erro!','danger') } // Verifica se continua pendente
+				
+				$(divValidacao).val('OK')
+				console.log(divValidacao)
 				msgsToast("Encaminhado, enviar o processo!", "success")
-				return true
 			}, 1000);
 		}, 1000);
 	}, 1000);
@@ -402,4 +325,21 @@ function customDataset(dataset, params, paramsNot, columns) {
 		var result = (DatasetFactory.getDataset(dataset, columns, constraints, null)).values;
 		return result
 	} catch (error) { throw "ERRO!" }
+}
+
+function msgsToast(msg, tipo) {
+	FLUIGC.toast({
+		title: 'Atenção: ',
+		message: msg,
+		type: tipo
+	});
+	if (tipo == 'danger') {
+		throw "Erro! " + msg
+	}
+}
+
+function msgEnviar(mensagem){
+	throw "<div class='alert alert-warning' role='alert'>" +
+        "<strong>Atenção:</strong> " + mensagem +
+        "</div><i class='fluigicon fluigicon-tag icon-sm'></i> <font style='font-weight: bold'>Dúvidas?</font> Entre em contato com o departamento de TI.";
 }
